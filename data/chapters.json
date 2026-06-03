@@ -5,5 +5,26 @@
     "range": "Sec. 1 - 5",
     "file": "ch-01.json",
     "modes": ["linear"]
+  },
+  {
+    "id": "II",
+    "title": "General Explanations",
+    "range": "Sec. 6 - 52A",
+    "file": "ch-02.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "III",
+    "title": "Of Punishments",
+    "range": "Sec. 53 - 75",
+    "file": "ch-03.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "IV",
+    "title": "General Exceptions",
+    "range": "Sec. 76 - 106",
+    "file": "ch-04.json",
+    "modes": ["linear"]
   }
 ]
