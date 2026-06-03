@@ -1,0 +1,30 @@
+[
+  {
+    "id": "I",
+    "title": "Introduction",
+    "range": "Sec. 1 - 5",
+    "file": "ch-01.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "II",
+    "title": "General Explanations",
+    "range": "Sec. 6 - 52A",
+    "file": "ch-02.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XVI",
+    "title": "Of Offences Affecting the Human Body",
+    "range": "Sec. 299 - 377",
+    "file": "ch-16.json",
+    "modes": ["linear", "offences"]
+  },
+  {
+    "id": "XVII",
+    "title": "Of Offences Against Property",
+    "range": "Sec. 378 - 462",
+    "file": "ch-17.json",
+    "modes": ["linear", "offences"]
+  }
+]
