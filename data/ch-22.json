@@ -1,0 +1,41 @@
+[
+  {
+    "section_number": "503",
+    "title": "Criminal intimidation",
+    "chapter": "XXII",
+    "chapter_title": "Criminal Intimidation, Insult & Annoyance",
+    "mode_tags": ["linear"],
+    "content": "Whoever threatens another with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do... commits criminal intimidation.",
+    "footnotes": [
+      {
+        "id": "fn-503-1",
+        "marker": "intent to cause alarm",
+        "text": "The Mental State: Physical violence does not need to actually occur. The crime is fully complete the moment a threat is communicated with the intent to cause psychological alarm or force an action."
+      }
+    ]
+  },
+  {
+    "section_number": "506",
+    "title": "Punishment for criminal intimidation",
+    "chapter": "XXII",
+    "chapter_title": "Criminal Intimidation, Insult & Annoyance",
+    "mode_tags": ["linear"],
+    "content": "Whoever commits the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both...",
+    "footnotes": []
+  },
+  {
+    "section_number": "510",
+    "title": "Misconduct in public by a drunken person",
+    "chapter": "XXII",
+    "chapter_title": "Criminal Intimidation, Insult & Annoyance",
+    "mode_tags": ["linear"],
+    "content": "Whoever, in a state of intoxication, appears in any public place... and there conducts himself in such a manner as to cause annoyance to any person, shall be punished with simple imprisonment for a term which may extend to twenty-four hours, or with fine... or with both.",
+    "footnotes": [
+      {
+        "id": "fn-510-1",
+        "marker": "twenty-four hours",
+        "text": "The Smallest Statutory Penalty: This section holds the historical distinction of prescribing the shortest prison sentence available within the entire text of the penal code."
+      }
+    ]
+  }
+]
