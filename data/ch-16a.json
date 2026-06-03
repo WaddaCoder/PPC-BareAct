@@ -1,0 +1,47 @@
+[
+  {
+    "section_number": "332",
+    "title": "Hurt",
+    "chapter": "XVI-A",
+    "chapter_title": "Wrongful Confinement & Kidnapping",
+    "mode_tags": ["linear"],
+    "content": "Whoever causes pain, harm, disease, infirmity or injury to any person or impairs, disables or dismembers any organ of the body or part thereof without causing his death, is said to cause hurt.",
+    "footnotes": [
+      {
+        "id": "fn-332-1",
+        "marker": "causes pain, harm, disease",
+        "text": "The statutory umbrella definition for all non-fatal bodily injuries. It forms the foundation before splitting into specific technical sub-categories like Shajjah and Jurh."
+      }
+    ]
+  },
+  {
+    "section_number": "337",
+    "title": "Shajjah",
+    "chapter": "XVI-A",
+    "chapter_title": "Wrongful Confinement & Kidnapping",
+    "mode_tags": ["linear"],
+    "content": "Whoever causes hurt on the head or face of any person which does not amount to itlaf-i-udw or itlaf-i- صلاحية-udw is said to cause shajjah.",
+    "footnotes": [
+      {
+        "id": "fn-337-1",
+        "marker": "head or face",
+        "text": "The strict anatomical boundary. Any injury below the neck falls under Jurh; if it is on the head or face, it is legally Shajjah, ranging from Shajjah-i-Khafifah (scratch) to Shajjah-i-Damighah (fracturing the skull to touch the brain membranes)."
+      }
+    ]
+  },
+  {
+    "section_number": "337B",
+    "title": "Jurh",
+    "chapter": "XVI-A",
+    "chapter_title": "Wrongful Confinement & Kidnapping",
+    "mode_tags": ["linear"],
+    "content": "Whoever causes hurt on any part of the body of any person, other than the head or face, which leaves a mark of the injury, temporary or permanent, is said to cause jurh.",
+    "footnotes": [
+      {
+        "id": "fn-337b-1",
+        "marker": "other than the head or face",
+        "text": "Divided into two primary structural variants: Jaifah (an injury extending into the body cavity/viscera) and Ghayr-Jaifah (injuries that do not enter the internal cavities, like deep cuts or bone breaks on limbs)."
+      }
+    ]
+  }
+]
