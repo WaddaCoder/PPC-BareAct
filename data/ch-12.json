@@ -1,0 +1,47 @@
+[
+  {
+    "section_number": "230",
+    "title": "Coin defined",
+    "chapter": "XII",
+    "chapter_title": "Offences relating to Coin and Government Stamps",
+    "mode_tags": ["linear"],
+    "content": "Coin is metal used for the time being as money, and stamped and issued by the authority of some State or Sovereign Power in order to be so used.",
+    "footnotes": [
+      {
+        "id": "fn-230-1",
+        "marker": "metal used for the time being as money",
+        "text": "The legal test for currency: Unstamped bullion or historical medals are treated merely as merchandise, not 'coin'. The asset must possess current, state-sanctioned legal tender status to trigger counterfeiting protections under this chapter."
+      }
+    ]
+  },
+  {
+    "section_number": "231",
+    "title": "Counterfeiting coin",
+    "chapter": "XII",
+    "chapter_title": "Offences relating to Coin and Government Stamps",
+    "mode_tags": ["linear"],
+    "content": "Whoever counterfeits or knowingly performs any part of the process of counterfeiting coin, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+    "footnotes": [
+      {
+        "id": "fn-231-1",
+        "marker": "counterfeits",
+        "text": "Deception Threshold: It is not required that the counterfeit coin be an exact or flawless replica. The offense is complete the moment the imitation is close enough to deceive an ordinary, unsuspecting person using reasonable caution."
+      }
+    ]
+  },
+  {
+    "section_number": "255",
+    "title": "Counterfeiting Government stamp",
+    "chapter": "XII",
+    "chapter_title": "Offences relating to Coin and Government Stamps",
+    "mode_tags": ["linear"],
+    "content": "Whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any stamp issued by Government for the purpose of revenue, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+    "footnotes": [
+      {
+        "id": "fn-255-1",
+        "marker": "purpose of revenue",
+        "text": "Aggravated Fiscal Fraud: Counterfeiting judicial or non-judicial fiscal stamps carries a significantly higher maximum sentence than regular coinage because it strikes directly at the state's capacity to collect revenue and authenticate legal documents."
+      }
+    ]
+  }
+]
