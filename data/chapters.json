@@ -26,5 +26,12 @@
     "range": "Sec. 76 - 106",
     "file": "ch-04.json",
     "modes": ["linear"]
+  },
+  {
+    "id": "V",
+    "title": "Of Abetment",
+    "range": "Sec. 107 - 120",
+    "file": "ch-05.json",
+    "modes": ["linear"]
   }
 ]
