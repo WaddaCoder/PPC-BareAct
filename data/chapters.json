@@ -61,5 +61,12 @@
     "range": "Sec. 141 - 160",
     "file": "ch-08.json",
     "modes": ["linear"]
+  },
+  {
+    "id": "IX",
+    "title": "Of Offences by or relating to Public Servants",
+    "range": "Sec. 161 - 171",
+    "file": "ch-09.json",
+    "modes": ["linear"]
   }
 ]
