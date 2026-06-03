@@ -3,21 +3,30 @@
     "section_number": "131",
     "title": "Abetting mutiny, or attempting to seduce a soldier, sailor or airman from his duty",
     "chapter": "VII",
-    "chapter_title": "Offences relating to the Army, Navy and Air Force",
+    "chapter_title": "Offences Relating to the Army, Navy & Air Force",
     "mode_tags": ["linear"],
-    "content": "Whoever abets the committing of mutiny by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of Pakistan, or attempts to seduce any such officer, soldier, sailor or airman from his allegiance or his duty, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+    "content": "Whoever abets the committing of mutiny by an officer, soldier, sailor or airman, in the Army, Navy or Air Force, or attempts to seduce any such person from his allegiance or his duty, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
     "footnotes": [
       {
         "id": "fn-131-1",
-        "marker": "abetting mutiny",
-        "text": "This handles civilian actions targeting military internal discipline. If the abetment succeeds and an actual mutiny breaks out as a consequence, Section 132 scales the maximum penalty up to death."
+        "marker": "seduce",
+        "text": "The act of 'seducing' involves corrupting the loyalty of service members to the state, turning them against their constitutional duties or encouraging revolt."
       }
     ]
   },
   {
-    "section_number": "140",
-    "title": "Wearing garb or carrying token used by soldier, sailor or airman",
+    "section_number": "133",
+    "title": "Abetment of assault by soldier, sailor or airman on his superior officer, when in execution of his office",
     "chapter": "VII",
-    "chapter_title": "Offences relating to the Army, Navy and Air Force",
+    "chapter_title": "Offences Relating to the Army, Navy & Air Force",
     "mode_tags": ["linear"],
-    "content": "Whoever, not being a soldier, sailor or airman in the Military, Naval or Air service of Pakistan, wears any garb or carries any token resembling any garb or token used by suchNormally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
+    "content": "Whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force, on any superior officer being in the execution of his office, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
+    "footnotes": [
+      {
+        "id": "fn-133-1",
+        "marker": "superior officer",
+        "text": "This protects the chain of command. Even if the assault does not physically occur, the *abetment* (incitement) itself is a serious criminal offense."
+      }
+    ]
+  }
+]
