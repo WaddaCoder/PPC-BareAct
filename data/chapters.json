@@ -33,5 +33,19 @@
     "range": "Sec. 107 - 120",
     "file": "ch-05.json",
     "modes": ["linear"]
+  },
+  {
+    "id": "VA",
+    "title": "Criminal Conspiracy",
+    "range": "Sec. 120A - 120B",
+    "file": "ch-05a.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "VI",
+    "title": "Offences against the State",
+    "range": "Sec. 121 - 130",
+    "file": "ch-06.json",
+    "modes": ["linear"]
   }
 ]
