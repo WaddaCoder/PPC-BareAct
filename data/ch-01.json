@@ -1,0 +1,59 @@
+[
+  {
+    "section_number": "1",
+    "title": "Title and extent of operation of the Code",
+    "chapter": "I",
+    "chapter_title": "Introduction",
+    "mode_tags": ["linear"],
+    "content": "This Act shall be called the Pakistan Penal Code, and shall take effect throughout Pakistan.",
+    "footnotes": [
+      {
+        "id": "fn-1",
+        "marker": "Pakistan",
+        "text": "Substituted by the Central Laws (Statute Reform) Ordinance, 1960 (21 of 1960), Section 3 and 2nd Schedule, for 'the whole of Pakistan' (with effect from 14th October, 1955)."
+      }
+    ]
+  },
+  {
+    "section_number": "2",
+    "title": "Punishment of offences committed within Pakistan",
+    "chapter": "I",
+    "chapter_title": "Introduction",
+    "mode_tags": ["linear"],
+    "content": "Every person shall be liable to punishment under this Code and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within Pakistan.",
+    "footnotes": []
+  },
+  {
+    "section_number": "3",
+    "title": "Punishment of offences committed beyond, but which by law may be tried within, Pakistan",
+    "chapter": "I",
+    "chapter_title": "Introduction",
+    "mode_tags": ["linear"],
+    "content": "Any person liable, by any Pakistan law, to be tried for an offence committed beyond Pakistan shall be dealt with according to the provisions of this Code for any act committed beyond Pakistan in the same manner as if such act had been committed within Pakistan.",
+    "footnotes": []
+  },
+  {
+    "section_number": "4",
+    "title": "Extension of Code to extra-territorial offences",
+    "chapter": "I",
+    "chapter_title": "Introduction",
+    "mode_tags": ["linear"],
+    "content": "The provisions of this Code apply also to any offence committed by: (1) any citizen of Pakistan or any person in the service of Pakistan in any place without and beyond Pakistan; (4) any person on any ship or aircraft registered in Pakistan wherever it may be.",
+    "footnotes": [
+      {
+        "id": "fn-2",
+        "marker": "citizen of Pakistan",
+        "text": "Substituted by the Central Laws (Adaptation) Order, 1961, Art. 2 and Sch., for 'British subject of Pakistani domicile'."
+      }
+    ]
+  },
+  {
+    "section_number": "5",
+    "title": "Certain laws not to be affected by this Act",
+    "chapter": "I",
+    "chapter_title": "Introduction",
+    "mode_tags": ["linear"],
+    "content": "Nothing in this Act shall affect the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the State or the provisions of any special or local law.",
+    "footnotes": []
+  }
+]
