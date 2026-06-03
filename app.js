@@ -75,7 +75,7 @@ function renderCode() {
   const cleanQuery = searchQuery.trim().toLowerCase();
 
   // Filter track logic matching selections
-  let filtered = loadedSections.filter(s => s.mode_tags.includes(activeMode));
+ let filtered = loadedSections.filter(s => s.mode_tags && Array.isArray(s.mode_tags) && s.mode_tags.includes(activeMode));
   
   if (activeChapterFilter !== 'ALL') {
     filtered = filtered.filter(s => s.chapter === activeChapterFilter);
