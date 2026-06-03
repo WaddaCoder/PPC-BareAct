@@ -1,0 +1,47 @@
+[
+  {
+    "section_number": "191",
+    "title": "Giving false evidence",
+    "chapter": "XI",
+    "chapter_title": "Of False Evidence and Offences against Public Justice",
+    "mode_tags": ["linear"],
+    "content": "Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence.",
+    "footnotes": [
+      {
+        "id": "fn-191-1",
+        "marker": "knows or believes to be false",
+        "text": "The Mens Rea of Perjury: A statement is not false evidence under this section merely because it is inaccurate. The prosecution must prove that the declarant had actual knowledge or a firm belief that the statement was untrue at the exact moment it was made."
+      }
+    ]
+  },
+  {
+    "section_number": "192",
+    "title": "Fabricating false evidence",
+    "chapter": "XI",
+    "chapter_title": "Of False Evidence and Offences against Public Justice",
+    "mode_tags": ["linear"],
+    "content": "Whoever causes any circumstance to exist or makes any false entry in any book or record, or makes any document containing a false statement, intending that such circumstance, false entry or false statement may appear in evidence in a judicial proceeding... and that such circumstance, false entry or false statement may cause any person who in such proceeding is to form an opinion upon the evidence, to entertain an erroneous opinion... is said to fabricate false evidence.",
+    "footnotes": [
+      {
+        "id": "fn-192-1",
+        "marker": "erroneous opinion",
+        "text": "Distinction from Section 191: Giving false evidence (191) requires an oral or written statement made under a legal obligation to tell the truth. Fabricating false evidence (192) involves actively manufacturing misleading physical or documentary circumstances *before* or outside the witness stand to deceive the court's ultimate judgment."
+      }
+    ]
+  },
+  {
+    "section_number": "201",
+    "title": "Causing disappearance of evidence of offence, or giving false information to screen offender",
+    "chapter": "XI",
+    "chapter_title": "Of False Evidence and Offences against Public Justice",
+    "mode_tags": ["linear"],
+    "content": "Whoever, knowing or having reason to believe that an offence has been committed, causes any evidence of the commission of that offence to disappear, with the intention of screening the offender from legal punishment, or with that intention gives any information respecting the offence which he knows or believes to be false, shall... be punished.",
+    "footnotes": [
+      {
+        "id": "fn-201-1",
+        "marker": "intention of screening",
+        "text": "The dominant intent test: To establish liability under Section 201, the primary moving intention behind hiding physical evidence or misdirecting investigators must be to protect the criminal from prosecution, rather than merely self-preservation."
+      }
+    ]
+  }
+]
