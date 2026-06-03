@@ -15,25 +15,35 @@ const pillTrack = document.getElementById('chapter-pills');
 const sheet = document.getElementById('footnote-sheet');
 const sheetText = document.getElementById('footnote-text');
 
-// 1. ASYNC BOOTLOADER ENGINE
+// 1. ASYNC BOOTLOADER ENGINE WITH ROOT-RELATIVE PATHS
 async function initApp() {
   try {
-    // Pull the master chapter blueprint map
-    const response = await fetch('./data/chapters.json');
+    // Root-relative pathing removes directory ambiguity on GitHub Pages
+    const response = await fetch('data/chapters.json');
+    if (!response.ok) throw new Error("Could not find data/chapters.json on server");
     globalChapters = await response.json();
     
-    // Concurrently load all section profiles across files
-    const loadPromises = globalChapters.map(ch => 
-      fetch(`./data/${ch.file}`).then(res => res.json())
-    );
-    
-    const results = await loadPromises;
-    loadedSections = results.flat(); // Merge all sub-arrays into a single database array
+    loadedSections = [];
+
+    // Safely pull sections from each registered file path sequentially
+    for (const ch of globalChapters) {
+      try {
+        const res = await fetch(`data/${ch.file}`);
+        if (res.ok) {
+          const data = await res.json();
+          loadedSections = loadedSections.concat(data);
+        } else {
+          console.warn(`Data tracking warning: data/${ch.file} could not be found (404).`);
+        }
+      } catch (fileErr) {
+        console.error(`Skipped loading data/${ch.file} due to parsing error:`, fileErr);
+      }
+    }
     
     renderChapterPills();
     renderCode();
   } catch (error) {
-    container.innerHTML = `<div class="empty-state">Error hydrating law definitions database: ${error.message}</div>`;
+    container.innerHTML = `<div class="empty-state">Error hydrating law definitions database: <br><small>${error.message}</small></div>`;
   }
 }
 
@@ -75,7 +85,7 @@ function renderCode() {
   const cleanQuery = searchQuery.trim().toLowerCase();
 
   // Filter track logic matching selections
- let filtered = loadedSections.filter(s => s.mode_tags && Array.isArray(s.mode_tags) && s.mode_tags.includes(activeMode));
+  let filtered = loadedSections.filter(s => s.mode_tags && Array.isArray(s.mode_tags) && s.mode_tags.includes(activeMode));
   
   if (activeChapterFilter !== 'ALL') {
     filtered = filtered.filter(s => s.chapter === activeChapterFilter);
@@ -85,7 +95,7 @@ function renderCode() {
     filtered = filtered.filter(s => {
       const isSectionMatch = s.section_number === cleanQuery;
       const isChapterMatch = s.chapter.toLowerCase() === cleanQuery || `ch ${s.chapter.toLowerCase()}` === cleanQuery;
-      const isTextMatch = s.content.toLowerCase().includes(cleanQuery) || s.title.toLowerCase().includes(cleanQuery);
+      const isTextMatch = (s.content && s.content.toLowerCase().includes(cleanQuery)) || (s.title && s.title.toLowerCase().includes(cleanQuery));
       return isSectionMatch || isChapterMatch || isTextMatch;
     });
   }
@@ -99,7 +109,7 @@ function renderCode() {
     const card = document.createElement('div');
     card.className = 'statute-card';
 
-    let txt = section.content;
+    let txt = section.content || '';
 
     // Inject footnote indicators natively matching text tokens
     if (section.footnotes && section.footnotes.length > 0) {
@@ -109,7 +119,7 @@ function renderCode() {
       });
     }
 
-    // Process yellow lookup highlighting mechanics
+    // Process text query highlighting mechanics
     if (cleanQuery && isNaN(cleanQuery) && !cleanQuery.startsWith('ch')) {
       const highlightRegex = new RegExp(`(?<!<[^>]*)\\b(${cleanQuery})\\b(?![^<]*>)`, 'gi');
       txt = txt.replace(highlightRegex, `<mark class="search-highlight">$1</mark>`);
@@ -146,25 +156,4 @@ function setupInteractionListeners() {
     trigger.addEventListener('touchstart', () => {
       pressTimer = setTimeout(() => showSheet(trigger.getAttribute('data-footnote-text')), 350);
     }, { passive: true });
-    trigger.addEventListener('touchend', () => clearTimeout(pressTimer));
-    trigger.addEventListener('click', () => showSheet(trigger.getAttribute('data-footnote-text')));
-  });
-}
-
-function showSheet(text) { sheetText.innerText = text; sheet.classList.add('visible'); }
-function hideSheet() { sheet.classList.remove('visible'); }
-document.addEventListener('pointerdown', (e) => {
-  if (!sheet.contains(e.target) && !e.target.classList.contains('footnote-trigger')) hideSheet();
-});
-
-linearBtn.addEventListener('click', () => { if (activeMode !== 'linear') { activeMode = 'linear'; activeChapterFilter = 'ALL'; updateModeUI(linearBtn, offencesBtn); } });
-offencesBtn.addEventListener('click', () => { if (activeMode !== 'offences') { activeMode = 'offences'; activeChapterFilter = 'ALL'; updateModeUI(offencesBtn, linearBtn); } });
-
-function updateModeUI(active, inactive) {
-  active.classList.add('active'); inactive.classList.remove('active');
-  searchBar.value = ''; searchQuery = ''; clearSearch.classList.add('hidden');
-  renderChapterPills(); renderCode();
-}
-
-// Execution Hook Guard
-document.addEventListener('DOMContentLoaded', initApp);
+    trigger.addEventListener('touchend',
