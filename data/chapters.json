@@ -50,7 +50,7 @@
   },
   {
     "id": "VII",
-    "title": "Offences relating to the Army, Navy and Air Force",
+    "title": "Offences relating to the Armed Forces",
     "range": "Sec. 131 - 140",
     "file": "ch-07.json",
     "modes": ["linear"]
@@ -64,7 +64,7 @@
   },
   {
     "id": "IX",
-    "title": "Of Offences by or relating to Public Servants",
+    "title": "Offences by or relating to Public Servants",
     "range": "Sec. 161 - 171",
     "file": "ch-09.json",
     "modes": ["linear"]
@@ -78,9 +78,107 @@
   },
   {
     "id": "X",
-    "title": "Of Contempts of the Lawful Authority of Public Servants",
+    "title": "Of Contempts of Lawful Authority",
     "range": "Sec. 172 - 190",
     "file": "ch-10.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XI",
+    "title": "Of False Evidence & Public Justice",
+    "range": "Sec. 191 - 229A",
+    "file": "ch-11.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XII",
+    "title": "Offences relating to Coin & Stamps",
+    "range": "Sec. 230 - 263A",
+    "file": "ch-12.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XIII",
+    "title": "Offences relating to Weights & Measures",
+    "range": "Sec. 264 - 267",
+    "file": "ch-13.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XIV",
+    "title": "Public Health, Safety & Morals",
+    "range": "Sec. 268 - 294B",
+    "file": "ch-14.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XV",
+    "title": "Offences relating to Religion",
+    "range": "Sec. 295 - 298C",
+    "file": "ch-15.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XVI",
+    "title": "Offences Affecting the Human Body",
+    "range": "Sec. 299 - 338H",
+    "file": "ch-16.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XVI-A",
+    "title": "Wrongful Confinement & Kidnapping",
+    "range": "Sec. 339 - 374",
+    "file": "ch-16a.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XVII",
+    "title": "Offences Against Property",
+    "range": "Sec. 378 - 462",
+    "file": "ch-17.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XVIII",
+    "title": "Offences relating to Documents & Marks",
+    "range": "Sec. 463 - 489G",
+    "file": "ch-18.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XIX",
+    "title": "Criminal Breach of Service Contracts",
+    "range": "Sec. 490 - 492",
+    "file": "ch-19.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XX",
+    "title": "Offences Relating to Marriage",
+    "range": "Sec. 493 - 498C",
+    "file": "ch-20.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XXI",
+    "title": "Defamation",
+    "range": "Sec. 499 - 502",
+    "file": "ch-21.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XXII",
+    "title": "Criminal Intimidation, Insult & Annoyance",
+    "range": "Sec. 503 - 510",
+    "file": "ch-22.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "XXIII",
+    "title": "Attempts to Commit Offences",
+    "range": "Sec. 511",
+    "file": "ch-23.json",
     "modes": ["linear"]
   }
 ]
