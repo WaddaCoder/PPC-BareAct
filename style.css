@@ -1,3 +1,24 @@
+:root {
+  --bg-primary: #f8f9fa;
+  --surface: #ffffff;
+  --text-main: #202124;
+  --text-muted: #5f6368;
+  --accent: #1a73e8;
+  --accent-light: rgba(26, 115, 232, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* Header Extensions for Search and TOC Tracks */
 .app-header {
   flex-direction: column;
