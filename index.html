@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>PPC Bare Act Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Top Navigation Module -->
+  <header class="app-header">
+    <div class="toggle-container">
+      <button id="btn-linear" class="toggle-btn active">Linear Mode</button>
+      <button id="btn-offences" class="toggle-btn">Offences Only</button>
+    </div>
+  </header>
+
+  <!-- Dynamic Content Area -->
+  <main id="statute-container" class="content-canvas"></main>
+
+  <!-- Interactive Historical Overlay Sheet -->
+  <div id="footnote-sheet" class="bottom-sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-content">
+      <p id="footnote-text"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
