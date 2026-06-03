@@ -1,1 +1,137 @@
-
+[
+  {
+    "section_number": "76",
+    "title": "Act done by a person bound, or by mistake of fact believing himself bound, by law",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing is an offence which is done by a person who is, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith believes himself to be, bound by law to do it.",
+    "footnotes": [
+      {
+        "id": "fn-76-1",
+        "marker": "mistake of fact",
+        "text": "Ignorantia facti excusat, ignorantia juris non excusat: An honest mistake of fact is a valid legal excuse, but a mistake of law will not excuse criminal liability."
+      }
+    ]
+  },
+  {
+    "section_number": "79",
+    "title": "Act done by a person justified, or by mistake of fact believing himself justified, by law",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing is an offence which is done by any person who is justified by law, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith, believes himself to be justified by law, in doing it.",
+    "footnotes": []
+  },
+  {
+    "section_number": "80",
+    "title": "Accident in doing a lawful act",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing is an offence which is done by accident or misfortune, and without any criminal intention or knowledge in the doing of a lawful act in a lawful manner by lawful means and with proper care and caution.",
+    "footnotes": [
+      {
+        "id": "fn-80-1",
+        "marker": "criminal intention",
+        "text": "Mens Rea: The fundamental prerequisite of criminal liability. An act alone does not make a person guilty unless their mind is also legally blameworthy."
+      }
+    ]
+  },
+  {
+    "section_number": "82",
+    "title": "Act of a child under seven years of age",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing is an offence which is done by a child under seven years of age.",
+    "footnotes": [
+      {
+        "id": "fn-82-1",
+        "marker": "seven years",
+        "text": "Doli incapax: An absolute conclusive presumption of law that a child under 7 years of age cannot possess the requisite mental capacity (mens rea) to commit a crime."
+      }
+    ]
+  },
+  {
+    "section_number": "83",
+    "title": "Act of a child above seven and under twelve of immature understanding",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing is an offence which is done by a child above seven years of age and under twelve, who has not attained sufficient maturity of understanding to judge of the nature and consequences of his conduct on that occasion.",
+    "footnotes": [
+      {
+        "id": "fn-83-1",
+        "marker": "twelve",
+        "text": "The age limit was raised from 'ten' to 'twelve' by the Criminal Law (Amendment) Act, 2016 (XLIV of 2016)."
+      }
+    ]
+  },
+  {
+    "section_number": "84",
+    "title": "Act of a person of unsound mind",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act, or that he is doing what is either wrong or contrary to law.",
+    "footnotes": [
+      {
+        "id": "fn-84-1",
+        "marker": "unsoundness of mind",
+        "text": "Legal Insanity vs Medical Insanity: Codification of the McNaghten Rules. The incapacity must exist at the exact time the act is committed, rendering the individual incapable of distinguishing right from wrong."
+      }
+    ]
+  },
+  {
+    "section_number": "96",
+    "title": "Things done in private defence",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing is an offence which is done in the exercise of the right of private defence.",
+    "footnotes": []
+  },
+  {
+    "section_number": "97",
+    "title": "Right of private defence of the body and of property",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Every person has a right, subject to the restrictions contained in Section 99, to defend: First.—His own body, and the body of any other person, against any offence affecting the human body; Secondly.—The property, whether movable or immovable, of himself or of any other person, against any act which is an offence falling under the definition of theft, robbery, mischief or criminal trespass, or which is an attempt to commit theft, robbery, mischief or criminal trespass.",
+    "footnotes": []
+  },
+  {
+    "section_number": "99",
+    "title": "Acts against which there is no right of private defence",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "There is no right of private defence against an act which does not reasonably cause the apprehension of death or of grievous hurt, if done, or attempted to be done, by a public servant acting in good faith under colour of his office, though that act may not be strictly justifiable by law. Extent to which the right may be exercised: The right of private defence in no case extends to the inflicting of more harm than it is necessary to inflict for the purpose of defence.",
+    "footnotes": [
+      {
+        "id": "fn-99-1",
+        "marker": "more harm than it is necessary",
+        "text": "Principle of Proportionality: The defensive force used must match the nature of the threat. Excessive or retaliatory force strips away the protection of this exception."
+      }
+    ]
+  },
+  {
+    "section_number": "100",
+    "title": "When the right of private defence of the body extends to causing death",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "The right of private defence of the body extends, under the restrictions mentioned in the last preceding section, to the voluntary causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions hereinafter enumerated, namely: First.—Such an assault as may reasonably cause the apprehension that death will otherwise be the consequence of such assault; Secondly.—Such an assault as may reasonably cause the apprehension that grievous hurt will otherwise be the consequence; Thirdly.—An assault with the intention of committing rape; Fourthly.—An assault with the intention of gratifying unnatural lust; Fifthly.—An assault with the intention of kidnapping or abducting; Sixthly.—An assault with the intention of wrongfully confining a person.",
+    "footnotes": []
+  },
+  {
+    "section_number": "103",
+    "title": "When the right of private defence of property extends to causing death",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "The right of private defence of property extends, under the restrictions mentioned in Section 99, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions the exercise of the right, be an offence of any of the descriptions hereinafter enumerated, namely: First.—Robbery; Secondly.—House-breaking by night; Thirdly.—Mischief by fire committed on any building, tent or vessel, which building, tent or vessel is used as a human dwelling, or as a place for the custody of property; Fourthly.—Theft, mischief, or house-trespass, under such circumstances as may reasonably cause apprehension that death or grievous hurt will be the consequence, if such right of private defence is not exercised.",
+    "footnotes": []
+  }
+]
