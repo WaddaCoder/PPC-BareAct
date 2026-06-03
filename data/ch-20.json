@@ -1,8 +1,32 @@
 [
   {
     "section_number": "494",
-    "title": "Marrying again during lifetime of husband or wife",
+    "title": "Subsequent matrimonial unions during subsistence of prior marriage",
     "chapter": "XX",
     "chapter_title": "Offences Relating to Marriage",
     "mode_tags": ["linear"],
-    "content": "Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such husband or wife, shall be punished with imprisonment of either description for a term which may extend to seven years,Normally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
+    "content": "Any individual who, while an active legal marriage remains valid and subsisting, enters into a subsequent matrimonial union that is rendered legally void by reason of the continuation of the prior marriage, faces statutory penalties.",
+    "footnotes": [
+      {
+        "id": "fn-24-1",
+        "marker": "rendered legally void",
+        "text": "The rule against bigamy applies when the personal law governing the individual declares the second union invalid while the first stands. For example, under standard statutory application, it protects the legal monopoly of monogamous unions unless explicitly exempted by valid personal law codes."
+      }
+    ]
+  },
+  {
+    "section_number": "496",
+    "title": "Matrimonial ceremony fraudulently performed without lawful marriage",
+    "chapter": "XX",
+    "chapter_title": "Offences Relating to Marriage",
+    "mode_tags": ["linear"],
+    "content": "Whoever dishonestly or with a fraudulent intention goes through the ceremony of marriage, knowing that he is not thereby lawfully married, shall be punished.",
+    "footnotes": [
+      {
+        "id": "fn-24-2",
+        "marker": "knowing that he is not thereby lawfully married",
+        "text": "Focuses on deception regarding legal status. This addresses cases where one party is tricked into believing a ceremony creates a binding, lawful state-recognized union when the ceremony itself is legally ineffective or a sham."
+      }
+    ]
+  }
+]
