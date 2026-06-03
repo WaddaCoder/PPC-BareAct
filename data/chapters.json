@@ -69,4 +69,18 @@
     "file": "ch-09.json",
     "modes": ["linear"]
   }
+  {
+    "id": "IXA",
+    "title": "Offences Relating to Elections",
+    "range": "Sec. 171A - 171I",
+    "file": "ch-09a.json",
+    "modes": ["linear"]
+  },
+  {
+    "id": "X",
+    "title": "Of Contempts of the Lawful Authority of Public Servants",
+    "range": "Sec. 172 - 190",
+    "file": "ch-10.json",
+    "modes": ["linear"]
+  }
 ]
