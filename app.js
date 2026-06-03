@@ -1,43 +1,11 @@
-// 1. The Raw Bare Act Data Array
-const pakistanPenalCode = [
-  {
-    "section_number": "1",
-    "title": "Title and extent of operation of the Code",
-    "chapter": "I",
-    "chapter_title": "Introduction",
-    "mode_tags": ["linear"],
-    "content": "This Act shall be called the Pakistan Penal Code, and shall take effect throughout Pakistan.",
-    "footnotes": [
-      { "id": "fn-1", "marker": "Pakistan", "text": "Substituted by Ordinance 21 of 1960." }
-    ]
-  },
-  {
-    "section_number": "84",
-    "title": "Act of a person of unsound mind",
-    "chapter": "IV",
-    "chapter_title": "General Exceptions",
-    "mode_tags": ["linear"],
-    "content": "Nothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act.",
-    "footnotes": []
-  },
-  {
-    "section_number": "378",
-    "title": "Theft",
-    "chapter": "XVII",
-    "chapter_title": "Of Offences Against Property",
-    "mode_tags": ["linear", "offences"],
-    "content": "Whoever, intending to take dishonestly any moveable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.",
-    "footnotes": [
-      { "id": "fn-2", "marker": "dishonestly", "text": "See Section 24 PPC for definition." }
-    ]
-  }
-];
-
+let globalChapters = [];
+let loadedSections = [];
 let activeMode = 'linear';
 let searchQuery = '';
 let activeChapterFilter = 'ALL';
 let pressTimer;
 
+// DOM Link Nodes
 const container = document.getElementById('statute-container');
 const linearBtn = document.getElementById('btn-linear');
 const offencesBtn = document.getElementById('btn-offences');
@@ -47,28 +15,51 @@ const pillTrack = document.getElementById('chapter-pills');
 const sheet = document.getElementById('footnote-sheet');
 const sheetText = document.getElementById('footnote-text');
 
-// 1. Build dynamic horizontal Table of Contents pills based on what sections are visible
+// 1. ASYNC BOOTLOADER ENGINE
+async function initApp() {
+  try {
+    // Pull the master chapter blueprint map
+    const response = await fetch('./data/chapters.json');
+    globalChapters = await response.json();
+    
+    // Concurrently load all section profiles across files
+    const loadPromises = globalChapters.map(ch => 
+      fetch(`./data/${ch.file}`).then(res => res.json())
+    );
+    
+    const results = await loadPromises;
+    loadedSections = results.flat(); // Merge all sub-arrays into a single database array
+    
+    renderChapterPills();
+    renderCode();
+  } catch (error) {
+    container.innerHTML = `<div class="empty-state">Error hydrating law definitions database: ${error.message}</div>`;
+  }
+}
+
+// 2. RENDERING HORIZONTAL TOC TRACK PILLS
 function renderChapterPills() {
   pillTrack.innerHTML = '';
   
-  // Find chapters available in current mode
-  const availableSections = pakistanPenalCode.filter(s => s.mode_tags.includes(activeMode));
-  const uniqueChapters = [];
-  const map = new Map();
+  // Isolate chapters relative to active mode context
+  const targetChapters = globalChapters.filter(ch => ch.modes.includes(activeMode));
   
-  uniqueChapters.push({ id: 'ALL', title: 'All Chapters' });
-  
-  for (const item of availableSections) {
-    if(!map.has(item.chapter)){
-        map.set(item.chapter, true);
-        uniqueChapters.push({ id: item.chapter, title: `Ch. ${item.chapter}` });
-    }
-  }
+  // Inject "All Chapters" reset pill
+  const allPill = document.createElement('button');
+  allPill.className = `pill ${activeChapterFilter === 'ALL' ? 'active' : ''}`;
+  allPill.innerText = 'All Chapters';
+  allPill.addEventListener('click', () => {
+    activeChapterFilter = 'ALL';
+    renderCode();
+    renderChapterPills();
+  });
+  pillTrack.appendChild(allPill);
 
-  uniqueChapters.forEach(ch => {
+  targetChapters.forEach(ch => {
     const pill = document.createElement('button');
     pill.className = `pill ${activeChapterFilter === ch.id ? 'active' : ''}`;
-    pill.innerText = ch.title;
+    pill.innerText = `Ch. ${ch.id}`;
+    pill.title = ch.title;
     pill.addEventListener('click', () => {
       activeChapterFilter = ch.id;
       renderCode();
@@ -78,13 +69,13 @@ function renderChapterPills() {
   });
 }
 
-// 2. Main Processing and Rendering Engine
+// 3. CODE RENDERING PIPELINE
 function renderCode() {
   container.innerHTML = '';
   const cleanQuery = searchQuery.trim().toLowerCase();
 
-  // Multi-tier filtering pipeline (Mode -> Chapter -> Search Input)
-  let filtered = pakistanPenalCode.filter(s => s.mode_tags.includes(activeMode));
+  // Filter track logic matching selections
+  let filtered = loadedSections.filter(s => s.mode_tags.includes(activeMode));
   
   if (activeChapterFilter !== 'ALL') {
     filtered = filtered.filter(s => s.chapter === activeChapterFilter);
@@ -110,13 +101,15 @@ function renderCode() {
 
     let txt = section.content;
 
-    // Apply Footnote Sub-Wrappers
-    section.footnotes.forEach(fn => {
-      const regex = new RegExp(`\\b(${fn.marker})\\b`, 'g');
-      txt = txt.replace(regex, `<span class="footnote-trigger" data-footnote-text="${fn.text}">$1</span>`);
-    });
+    // Inject footnote indicators natively matching text tokens
+    if (section.footnotes && section.footnotes.length > 0) {
+      section.footnotes.forEach(fn => {
+        const regex = new RegExp(`\\b(${fn.marker})\\b`, 'g');
+        txt = txt.replace(regex, `<span class="footnote-trigger" data-footnote-text="${fn.text}">$1</span>`);
+      });
+    }
 
-    // Apply Real-time Text Query Highlighting (Skipping already processed HTML tags)
+    // Process yellow lookup highlighting mechanics
     if (cleanQuery && isNaN(cleanQuery) && !cleanQuery.startsWith('ch')) {
       const highlightRegex = new RegExp(`(?<!<[^>]*)\\b(${cleanQuery})\\b(?![^<]*>)`, 'gi');
       txt = txt.replace(highlightRegex, `<mark class="search-highlight">$1</mark>`);
@@ -133,14 +126,10 @@ function renderCode() {
   setupInteractionListeners();
 }
 
-// 3. User Input Listeners
+// 4. USER EVENT CAPTURE LOGIC
 searchBar.addEventListener('input', (e) => {
   searchQuery = e.target.value;
-  if (searchQuery.length > 0) {
-    clearSearch.classList.remove('hidden');
-  } else {
-    clearSearch.classList.add('hidden');
-  }
+  clearSearch.classList.toggle('hidden', searchQuery.length === 0);
   renderCode();
 });
 
@@ -151,7 +140,6 @@ clearSearch.addEventListener('click', () => {
   renderCode();
 });
 
-// Setup interaction hooks for footnote items
 function setupInteractionListeners() {
   const triggers = document.querySelectorAll('.footnote-trigger');
   triggers.forEach(trigger => {
@@ -169,7 +157,6 @@ document.addEventListener('pointerdown', (e) => {
   if (!sheet.contains(e.target) && !e.target.classList.contains('footnote-trigger')) hideSheet();
 });
 
-// Toggle Modes
 linearBtn.addEventListener('click', () => { if (activeMode !== 'linear') { activeMode = 'linear'; activeChapterFilter = 'ALL'; updateModeUI(linearBtn, offencesBtn); } });
 offencesBtn.addEventListener('click', () => { if (activeMode !== 'offences') { activeMode = 'offences'; activeChapterFilter = 'ALL'; updateModeUI(offencesBtn, linearBtn); } });
 
@@ -179,8 +166,5 @@ function updateModeUI(active, inactive) {
   renderChapterPills(); renderCode();
 }
 
-// Robust DOM Lifecycle Guard Hook
-document.addEventListener('DOMContentLoaded', () => {
-  renderChapterPills();
-  renderCode();
-});
+// Execution Hook Guard
+document.addEventListener('DOMContentLoaded', initApp);
