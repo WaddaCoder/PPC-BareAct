@@ -1,0 +1,47 @@
+[
+  {
+    "section_number": "161",
+    "title": "Public servant taking gratification other than legal remuneration in respect of an official act",
+    "chapter": "IX",
+    "chapter_title": "Of Offences by or relating to Public Servants",
+    "mode_tags": ["linear"],
+    "content": "Whoever, being or expecting to be a public servant, accepts or obtains, or agrees to accept, or attempts to obtain from any person, for himself or for any other person, any gratification whatever, other than legal remuneration, as a motive or reward for doing or forbearing to do any official act... shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+    "footnotes": [
+      {
+        "id": "fn-161-1",
+        "marker": "gratification",
+        "text": "The word 'gratification' is not restricted to pecuniary gratifications or those estimable in money. It includes any form of bribe, benefit, or favor used to influence an official exercise of power."
+      }
+    ]
+  },
+  {
+    "section_number": "162",
+    "title": "Taking gratification, in order, by corrupt or illegal means, to influence public servant",
+    "chapter": "IX",
+    "chapter_title": "Of Offences by or relating to Public Servants",
+    "mode_tags": ["linear"],
+    "content": "Whoever accepts or obtains... any gratification whatever as a motive or reward for inducing, by corrupt or illegal means, any public servant to do or to forbear to do any official act... shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+    "footnotes": [
+      {
+        "id": "fn-162-1",
+        "marker": "inducing",
+        "text": "This targets the intermediaries or middlemen. It criminalizes taking a bribe to act as an influential broker to corrupt a public official, even if the official is unaware of it."
+      }
+    ]
+  },
+  {
+    "section_number": "166",
+    "title": "Public servant disobeying law, with intent to cause injury to any person",
+    "chapter": "IX",
+    "chapter_title": "Of Offences by or relating to Public Servants",
+    "mode_tags": ["linear"],
+    "content": "Whoever, being a public servant, knowingly disobeys any direction of the law as to the way in which he is to conduct himself as such public servant, intending to cause, or knowing it to be likely that he will by such disobedience cause, injury to any person, shall be punished with simple imprisonment for a term which may extend to one year, or with fine, or with both.",
+    "footnotes": [
+      {
+        "id": "fn-166-1",
+        "marker": "knowingly disobeys",
+        "text": "Requires proof of knowledge and specific target intent. The public official must explicitly know they are violating a statutory directive, with the clear mind-state to cause legal harm or injury to an individual."
+      }
+    ]
+  }
+]
