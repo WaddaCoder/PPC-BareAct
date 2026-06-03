@@ -1,1 +1,26 @@
-
+[
+  {
+    "section_number": "53",
+    "title": "Punishments",
+    "chapter": "III",
+    "chapter_title": "Of Punishments",
+    "mode_tags": ["linear"],
+    "content": "The punishments to which offenders are liable under the provisions of this Code are: Firstly, Qisas; Secondly, Diyat; Thirdly, Arsh; Fourthly, Daman; Fifthly, Ta'zir; Sixthly, Death; Seventhly, Imprisonment for life; Eighthly, Imprisonment which is of two descriptions, namely: (i) Rigorous, i.e., with hard labour, (ii) Simple; Ninthly, Forfeiture of property; Tenthly, Fine.",
+    "footnotes": [
+      {
+        "id": "fn-ch3-1",
+        "marker": "Qisas",
+        "text": "Substituted by the Criminal Law (Amendment) Act, II of 1997. Qisas means punishment by causing similar hurt at the same part of the body of the convict as he has caused to the victim or by causing his death if he has committed qatl-i-amd."
+      }
+    ]
+  },
+  {
+    "section_number": "54",
+    "title": "Commutation of sentence of death",
+    "chapter": "III",
+    "chapter_title": "Of Punishments",
+    "mode_tags": ["linear"],
+    "content": "In every case in which sentence of death shall have been passed the Federal Government or the Provincial Government of the Province within which the offender shall have been sentenced may, without the consent of the offender, commute the punishment for any other punishment provided by this Code.",
+    "footnotes": []
+  }
+]
