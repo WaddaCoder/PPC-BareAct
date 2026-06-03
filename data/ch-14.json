@@ -1,0 +1,41 @@
+[
+  {
+    "section_number": "268",
+    "title": "Public nuisance",
+    "chapter": "XIV",
+    "chapter_title": "Public Health, Safety & Morals",
+    "mode_tags": ["linear"],
+    "content": "A person is guilty of a public nuisance who does any act or is guilty of an illegal omission which causes any common injury, danger, annoyance or obstruction to the public or to the people in general who dwell or occupy property in the vicinity, or which must necessarily cause injury, obstruction, danger or annoyance to persons who may have occasion to use any public right.",
+    "footnotes": [
+      {
+        "id": "fn-268-1",
+        "marker": "people in general",
+        "text": "Distinction from Private Nuisance: A public nuisance must affect the public at large or an entire neighborhood collectively. Section 268 explicitly states that a public nuisance cannot be excused on the ground that it causes some convenience or advantage elsewhere."
+      }
+    ]
+  },
+  {
+    "section_number": "279",
+    "title": "Rash driving or riding on a public way",
+    "chapter": "XIV",
+    "chapter_title": "Public Health, Safety & Morals",
+    "mode_tags": ["linear"],
+    "content": "Whoever drives any vehicle, or rides, on any public way in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any other person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine which may extend to ten thousand rupees, or with both.",
+    "footnotes": [
+      {
+        "id": "fn-279-1",
+        "marker": "rash or negligent",
+        "text": "The test for criminality under Section 279 relies on the degree of risk. 'Rashness' implies acting with the consciousness that mischievous consequences may follow, but hoping they will not. 'Negligence' is a total blankness of attention—failing to exercise the standard of care that a reasonable person would."
+      }
+    ]
+  },
+  {
+    "section_number": "290",
+    "title": "Punishment for public nuisance in cases not otherwise provided for",
+    "chapter": "XIV",
+    "chapter_title": "Public Health, Safety & Morals",
+    "mode_tags": ["linear"],
+    "content": "Whoever commits a public nuisance in any case not otherwise punishable by this Code, shall be punished with fine which may extend to five hundred rupees.",
+    "footnotes": []
+  }
+]
