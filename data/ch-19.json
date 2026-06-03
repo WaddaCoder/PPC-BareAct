@@ -1,46 +1,16 @@
 [
   {
-    "section_number": "463",
-    "title": "Forgery",
-    "chapter": "XVIII",
-    "chapter_title": "Offences relating to Documents & Marks",
+    "section_number": "491",
+    "title": "Breach of contract to attend on and supply the wants of helpless person",
+    "chapter": "XIX",
+    "chapter_title": "Criminal Breach of Service Contracts",
     "mode_tags": ["linear"],
-    "content": "Whoever makes any false document or part of a document, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery.",
+    "content": "Whoever, being bound by a lawful contract to attend on or to supply the wants of any person who, by reason of youth, or of unsoundness of mind, or of a disease or bodily weakness, is helpless or incapable of providing for his own safety or of supplying his own wants, voluntarily omits so to do, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to five hundred rupees, or with both.",
     "footnotes": [
       {
-        "id": "fn-463-1",
-        "marker": "intent to commit fraud",
-        "text": "The Dual Element: Actus Reus requires the creation of a false document. Mens Rea requires a specific intent to cause injury or perpetrate a fraud. Merely writing an incorrect statement on a page without fraudulent intent does not satisfy the statutory threshold for forgery."
-      }
-    ]
-  },
-  {
-    "section_number": "464",
-    "title": "Making a false document",
-    "chapter": "XVIII",
-    "chapter_title": "Offences relating to Documents & Marks",
-    "mode_tags": ["linear"],
-    "content": "A person is said to make a false document—First.—Who dishonestly or fraudulently makes, signs, seals or executes a document or part of a document, or makes any mark denoting the execution of a document, with the intention of causing it to be believed that such document or part of a document was made, signed, sealed or executed by or by the authority of a person by whom or by whose authority he knows that it was not made, signed, sealed or executed...",
-    "footnotes": [
-      {
-        "id": "fn-464-1",
-        "marker": "dishonestly or fraudulently",
-        "text": "Statutory Mechanics: This section unpacks the exact physical methods of committing forgery. It covers signing under a fake identity, altering a genuinely signed document without authorization, or tricking someone into signing an instrument when they lack mental capacity or are entirely deceived as to its contents."
-      }
-    ]
-  },
-  {
-    "section_number": "489F",
-    "title": "Dishonestly issuing a cheque for repayment of loan, etc.",
-    "chapter": "XVIII",
-    "chapter_title": "Offences relating to Documents & Marks",
-    "mode_tags": ["linear"],
-    "content": "Whoever dishonestly issues a cheque towards repayment of a loan or fulfillment of an obligation which is dishonoured on presentation, shall be punished with imprisonment which may extend to three years, or with fine, or with both, unless he can prove that he had made arrangements with his bank to ensure that the cheque would be honoured and that the bank was at fault in dishonouring the cheque.",
-    "footnotes": [
-      {
-        "id": "fn-489f-1",
-        "marker": "dishonestly issues a cheque",
-        "text": "The Post-Dated Cheque Rule: One of the most heavily litigated commercial-criminal provisions. The offense is triggered the moment a cheque is bounced due to insufficient funds, placing a statutory burden on the issuer to prove they acted in good faith regarding their banking arrangements."
+        "id": "fn-491-1",
+        "marker": "helpless person",
+        "text": "The Duty of Care Exception: While standard breaches of contract are strictly civil matters, this specific section criminalizes the abandonment of a contractual duty when it directly leaves a vulnerable individual (like a child or bedridden patient) exposed to physical danger."
       }
     ]
   }
