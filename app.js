@@ -179,6 +179,8 @@ function updateModeUI(active, inactive) {
   renderChapterPills(); renderCode();
 }
 
-// Initialize Boot
-renderChapterPills();
-renderCode();
+// Robust DOM Lifecycle Guard Hook
+document.addEventListener('DOMContentLoaded', () => {
+  renderChapterPills();
+  renderCode();
+});
