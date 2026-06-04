@@ -52,8 +52,11 @@ function renderChapterPills() {
   // Filter for linear or offences mode
   let targetChapters = globalChapters;
   if (activeMode === 'offences') {
-    targetChapters = globalChapters.filter(ch => ch.title.toLowerCase().includes('offence'));
-  }
+  filtered = filtered.filter(s => 
+    (s.chapter_title && s.chapter_title.toLowerCase().includes('offence')) || 
+    (s.title && s.title.toLowerCase().includes('offence'))
+  );
+}
   
   const allPill = document.createElement('button');
   allPill.className = `pill ${activeChapterFilter === 'ALL' ? 'active' : ''}`;
