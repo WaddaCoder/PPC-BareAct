@@ -6,6 +6,11 @@
     "chapter_title": "Offences Against Property",
     "mode_tags": ["linear", "offences"],
     "content": "Whoever, intending to take dishonestly any moveable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.",
+    "sentencing_ladder": [
+      { "condition": "Standard Theft (Sec. 379)", "penalty": "Up to 3 years" },
+      { "condition": "Theft in a Dwelling House (Sec. 380)", "penalty": "Up to 7 years" },
+      { "condition": "Theft by Clerk/Servant (Sec. 381)", "penalty": "Up to 7 years + Fine" }
+    ],
     "footnotes": [
       {
         "id": "fn-378-1",
@@ -19,8 +24,12 @@
     "title": "Extortion",
     "chapter": "XVII",
     "chapter_title": "Offences Against Property",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
     "content": "Whoever intentionally puts any person in fear of any injury to that person, or to any other, and thereby dishonestly induces the person so put in fear to deliver to any person any property or valuable security, or anything signed or sealed which may be converted into a valuable security, commits 'extortion'.",
+    "sentencing_ladder": [
+      { "condition": "General Extortion (Sec. 384)", "penalty": "Up to 3 years" },
+      { "condition": "Extortion by threat of death/grievous hurt (Sec. 386)", "penalty": "Up to 10 years" }
+    ],
     "footnotes": [
       {
         "id": "fn-383-1",
@@ -34,8 +43,12 @@
     "title": "Robbery",
     "chapter": "XVII",
     "chapter_title": "Offences Against Property",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
     "content": "In all robbery there is either theft or extortion. Theft is 'robbery' if, in order to the committing of the theft... the offender, for that end, voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint. Extortion is 'robbery' if the offender, at the time of committing the extortion, is in the presence of the person put in fear, and commits the extortion by putting that person in fear of instant death, of instant hurt, or of instant wrongful restraint...",
+    "sentencing_ladder": [
+      { "condition": "Standard Robbery (Sec. 392)", "penalty": "Up to 10 years" },
+      { "condition": "Robbery on Highway (Sunset to Sunrise) (Sec. 392)", "penalty": "Up to 14 years" }
+    ],
     "footnotes": [
       {
         "id": "fn-390-1",
@@ -49,8 +62,12 @@
     "title": "Dacoity",
     "chapter": "XVII",
     "chapter_title": "Offences Against Property",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
     "content": "When five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit 'dacoity'.",
+    "sentencing_ladder": [
+      { "condition": "General Dacoity (Sec. 395)", "penalty": "Life Imprisonment or up to 10 years" },
+      { "condition": "Dacoity with Murder (Sec. 396)", "penalty": "Death, Life Imprisonment, or 10 years" }
+    ],
     "footnotes": [
       {
         "id": "fn-391-1",
@@ -64,8 +81,12 @@
     "title": "Criminal breach of trust",
     "chapter": "XVII",
     "chapter_title": "Offences Against Property",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
     "content": "Whoever, being in any manner entrusted with property, or with any dominion over property, dishonestly misappropriates or converts to his own use that property, or dishonestly uses or disposes of that property in violation of any direction of law prescribing the mode in which such trust is to be discharged... commits 'criminal breach of trust'.",
+    "sentencing_ladder": [
+      { "condition": "General Breach of Trust (Sec. 406)", "penalty": "Up to 3 years" },
+      { "condition": "Breach of Trust by Clerk/Servant (Sec. 408)", "penalty": "Up to 7 years" }
+    ],
     "footnotes": [
       {
         "id": "fn-405-1",
