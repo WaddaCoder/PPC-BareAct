@@ -56,5 +56,14 @@
     "sentencing_ladder": [
       { "condition": "Standard Robbery (Sec. 392)", "penalty": "Up to 10 years" }
     ]
+  },
+  {
+    "section_number": "403",
+    "title": "Dishonest Misappropriation of Property",
+    "chapter": "XVII",
+    "chapter_title": "Offences Against Property",
+    "mode_tags": ["linear", "offences"],
+    "content": "Whoever dishonestly misappropriates or converts to his own use any moveable property, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+    "related_sections": [{ "section": "378", "title": "Theft" }]
   }
 ]
