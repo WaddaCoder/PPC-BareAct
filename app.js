@@ -79,27 +79,28 @@ function renderChapterPills() {
   if (!pillTrack) return;
   pillTrack.innerHTML = '';
   
-  // Logic to determine which chapters to show based on the active mode
   let targetChapters = globalChapters;
 
   if (activeMode === 'offences') {
     targetChapters = globalChapters.filter(ch => ch.title.toLowerCase().includes('offence'));
   } else if (activeMode === 'map') {
-    // NEW: Filter to only show chapters that contain at least one section with a 'map_node'
     targetChapters = globalChapters.filter(ch => 
       loadedSections.some(s => s.chapter === ch.id && s.map_node)
     );
   }
   
-  const allPill = document.createElement('button');
-  allPill.className = `pill ${activeChapterFilter === 'ALL' ? 'active' : ''}`;
-  allPill.innerText = 'All Chapters';
-  allPill.addEventListener('click', () => { 
-    activeChapterFilter = 'ALL'; 
-    activeMode === 'map' ? renderMap() : renderCode(); 
-    renderChapterPills(); 
-  });
-  pillTrack.appendChild(allPill);
+  // Only add 'All Chapters' pill if we are NOT in map mode
+  if (activeMode !== 'map') {
+    const allPill = document.createElement('button');
+    allPill.className = `pill ${activeChapterFilter === 'ALL' ? 'active' : ''}`;
+    allPill.innerText = 'All Chapters';
+    allPill.addEventListener('click', () => { 
+      activeChapterFilter = 'ALL'; 
+      activeMode === 'map' ? renderMap() : renderCode(); 
+      renderChapterPills(); 
+    });
+    pillTrack.appendChild(allPill);
+  }
 
   targetChapters.forEach(ch => {
     const pill = document.createElement('button');
