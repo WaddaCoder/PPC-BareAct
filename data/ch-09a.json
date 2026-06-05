@@ -5,7 +5,9 @@
     "chapter": "IXA",
     "chapter_title": "Offences Relating to Elections",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 420 },
     "content": "Whoever gives a gratification to any person with the object of inducing him or any other person to exercise any electoral right or of rewarding any person for having exercised any such right... commits the offence of bribery.",
+    "related_sections": [{ "section": "171C", "title": "Undue influence" }],
     "footnotes": [
       {
         "id": "fn-171b-1",
@@ -19,8 +21,10 @@
     "title": "Undue influence at elections",
     "chapter": "IXA",
     "chapter_title": "Offences Relating to Elections",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 250, "y": 420 },
     "content": "Whoever voluntarily interferes or attempts to interfere with the free exercise of any electoral right commits the offence of undue influence at an election.",
+    "related_sections": [{ "section": "171B", "title": "Bribery" }],
     "footnotes": [
       {
         "id": "fn-171c-1",
