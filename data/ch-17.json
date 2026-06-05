@@ -5,9 +5,7 @@
     "chapter": "XVII",
     "chapter_title": "Offences Against Property",
     "mode_tags": ["linear", "offences"],
-    "content_parts": [
-      { "type": "rule", "text": "Whoever, intending to take dishonestly any moveable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft." }
-    ],
+    "content_parts": [{ "type": "rule", "text": "Whoever, intending to take dishonestly any moveable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft." }],
     "related_sections": [
       { "section": "379", "title": "Punishment for Theft" },
       { "section": "403", "title": "Dishonest Misappropriation" }
@@ -18,18 +16,18 @@
       { "condition": "Theft by Clerk/Servant (Sec. 381)", "penalty": "Up to 7 years + Fine" }
     ],
     "footnotes": [
-      {
-        "id": "fn-378-1",
-        "marker": "moves that property",
-        "text": "The Asportation Rule: Physical movement is the exact moment the crime is completed. It does not matter if the offender succeeds in carrying the item away; the mere dishonest movement out of the victim's possession satisfies the Actus Reus of theft."
-      },
-      {
-        "id": "fn-378-2",
-        "marker": "dishonestly",
-        "is_definition": true,
-        "text": "Whoever does anything with the intention of causing wrongful gain to one person or wrongful loss to another person, is said to do that thing 'dishonestly'. (Section 24, PPC)"
-      }
+      { "id": "fn-378-1", "marker": "moves that property", "text": "The Asportation Rule: Physical movement is the exact moment the crime is completed." },
+      { "id": "fn-378-2", "marker": "dishonestly", "is_definition": true, "text": "Section 24, PPC: Whoever does anything with the intention of causing wrongful gain to one person or wrongful loss to another." }
     ]
+  },
+  {
+    "section_number": "379",
+    "title": "Punishment for Theft",
+    "chapter": "XVII",
+    "chapter_title": "Offences Against Property",
+    "mode_tags": ["linear", "offences"],
+    "content": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+    "related_sections": [{ "section": "378", "title": "Theft (Definition)" }]
   },
   {
     "section_number": "383",
@@ -37,17 +35,11 @@
     "chapter": "XVII",
     "chapter_title": "Offences Against Property",
     "mode_tags": ["linear", "offences"],
-    "content": "Whoever intentionally puts any person in fear of any injury to that person, or to any other, and thereby dishonestly induces the person so put in fear to deliver to any person any property or valuable security, or anything signed or sealed which may be converted into a valuable security, commits 'extortion'.",
+    "content": "Whoever intentionally puts any person in fear of any injury to that person... commits 'extortion'.",
+    "related_sections": [{ "section": "390", "title": "Robbery" }],
     "sentencing_ladder": [
       { "condition": "General Extortion (Sec. 384)", "penalty": "Up to 3 years" },
       { "condition": "Extortion by threat of death/grievous hurt (Sec. 386)", "penalty": "Up to 10 years" }
-    ],
-    "footnotes": [
-      {
-        "id": "fn-383-1",
-        "marker": "induces... to deliver",
-        "text": "Distinction from Theft: In theft, property is taken without consent and without the victim's active participation. In extortion, the victim's consent is actively forced and obtained through fear, causing them to deliver the property themselves."
-      }
     ]
   },
   {
@@ -56,55 +48,13 @@
     "chapter": "XVII",
     "chapter_title": "Offences Against Property",
     "mode_tags": ["linear", "offences"],
-    "content": "In all robbery there is either theft or extortion. Theft is 'robbery' if, in order to the committing of the theft... the offender, for that end, voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint. Extortion is 'robbery' if the offender, at the time of committing the extortion, is in the presence of the person put in fear, and commits the extortion by putting that person in fear of instant death, of instant hurt, or of instant wrongful restraint...",
-    "sentencing_ladder": [
-      { "condition": "Standard Robbery (Sec. 392)", "penalty": "Up to 10 years" },
-      { "condition": "Robbery on Highway (Sunset to Sunrise) (Sec. 392)", "penalty": "Up to 14 years" }
+    "content": "In all robbery there is either theft or extortion...",
+    "related_sections": [
+        { "section": "378", "title": "Theft" },
+        { "section": "383", "title": "Extortion" }
     ],
-    "footnotes": [
-      {
-        "id": "fn-390-1",
-        "marker": "fear of instant death or hurt",
-        "text": "The Instant Danger Test: This is an aggravated form of theft or extortion. The presence of immediate, proximate danger or threat of instant violence is what legally upgrades a simple theft or extortion into a robbery."
-      }
-    ]
-  },
-  {
-    "section_number": "391",
-    "title": "Dacoity",
-    "chapter": "XVII",
-    "chapter_title": "Offences Against Property",
-    "mode_tags": ["linear", "offences"],
-    "content": "When five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit 'dacoity'.",
     "sentencing_ladder": [
-      { "condition": "General Dacoity (Sec. 395)", "penalty": "Life Imprisonment or up to 10 years" },
-      { "condition": "Dacoity with Murder (Sec. 396)", "penalty": "Death, Life Imprisonment, or 10 years" }
-    ],
-    "footnotes": [
-      {
-        "id": "fn-391-1",
-        "marker": "five or more persons",
-        "text": "The Numerical Threshold: Just like Unlawful Assembly (Section 141), Dacoity requires a minimum of five participants. If four people commit an armed bank heist, it is legally a Robbery; if a fifth person joins to hold the door, the entire offense instantly upgrades to Dacoity for all participants."
-      }
-    ]
-  },
-  {
-    "section_number": "405",
-    "title": "Criminal breach of trust",
-    "chapter": "XVII",
-    "chapter_title": "Offences Against Property",
-    "mode_tags": ["linear", "offences"],
-    "content": "Whoever, being in any manner entrusted with property, or with any dominion over property, dishonestly misappropriates or converts to his own use that property, or dishonestly uses or disposes of that property in violation of any direction of law prescribing the mode in which such trust is to be discharged... commits 'criminal breach of trust'.",
-    "sentencing_ladder": [
-      { "condition": "General Breach of Trust (Sec. 406)", "penalty": "Up to 3 years" },
-      { "condition": "Breach of Trust by Clerk/Servant (Sec. 408)", "penalty": "Up to 7 years" }
-    ],
-    "footnotes": [
-      {
-        "id": "fn-405-1",
-        "marker": "entrusted with property",
-        "text": "Fiduciary Violation: Unlike theft (where the initial possession is unlawful), Criminal Breach of Trust requires that the offender initially received the property through lawful entrustment, but subsequently formed the dishonest intent to misappropriate it."
-      }
+      { "condition": "Standard Robbery (Sec. 392)", "penalty": "Up to 10 years" }
     ]
   }
 ]
