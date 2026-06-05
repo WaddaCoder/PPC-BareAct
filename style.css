@@ -218,11 +218,37 @@ body {
   font-weight: 500;
 }
 
+/* NEW: Definition trigger style */
+.definition-trigger {
+  border-bottom: 2px dotted var(--accent);
+  background-color: #e8f0fe;
+  padding: 0 2px;
+  border-radius: 2px;
+  cursor: help;
+  font-weight: 500;
+}
+
 .search-highlight {
   background-color: #ffd600;
   color: #000000;
   padding: 0 2px;
   border-radius: 2px;
+}
+
+/* NEW: Related sections styling */
+.related-bar {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.link {
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 5px;
 }
 
 /* --- 6. INTERACTIVE BOTTOM OVERLAY SHEET --- */
