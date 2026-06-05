@@ -8,7 +8,7 @@ let activeChapterFilter = 'ALL';
 const container = document.getElementById('statute-container');
 const linearBtn = document.getElementById('btn-linear');
 const offencesBtn = document.getElementById('btn-offences');
-const mapBtn = document.getElementById('btn-map'); // New: Map Button
+const mapBtn = document.getElementById('btn-map'); 
 const searchBar = document.getElementById('search-bar');
 const pillTrack = document.getElementById('chapter-pills');
 const sheet = document.getElementById('footnote-sheet');
@@ -58,8 +58,11 @@ function renderMap() {
   container.innerHTML = `<div class="map-canvas" id="map-canvas"></div>`;
   const mapCanvas = document.getElementById('map-canvas');
   
-  // Only map sections that have 'map_node' coordinates
-  const mappedSections = loadedSections.filter(s => s.map_node);
+  // Filter sections by map_node existence AND active chapter filter
+  let mappedSections = loadedSections.filter(s => s.map_node);
+  if (activeChapterFilter !== 'ALL') {
+    mappedSections = mappedSections.filter(s => s.chapter === activeChapterFilter);
+  }
   
   mappedSections.forEach((section) => {
     const node = document.createElement('div');
@@ -75,7 +78,6 @@ function renderMap() {
 function renderChapterPills() {
   if (!pillTrack) return;
   pillTrack.innerHTML = '';
-  if (activeMode === 'map') return; // Hide pills in map view
   
   let targetChapters = (activeMode === 'offences') 
     ? globalChapters.filter(ch => ch.title.toLowerCase().includes('offence'))
@@ -84,14 +86,22 @@ function renderChapterPills() {
   const allPill = document.createElement('button');
   allPill.className = `pill ${activeChapterFilter === 'ALL' ? 'active' : ''}`;
   allPill.innerText = 'All Chapters';
-  allPill.addEventListener('click', () => { activeChapterFilter = 'ALL'; renderCode(); renderChapterPills(); });
+  allPill.addEventListener('click', () => { 
+    activeChapterFilter = 'ALL'; 
+    activeMode === 'map' ? renderMap() : renderCode(); 
+    renderChapterPills(); 
+  });
   pillTrack.appendChild(allPill);
 
   targetChapters.forEach(ch => {
     const pill = document.createElement('button');
     pill.className = `pill ${activeChapterFilter === ch.id ? 'active' : ''}`;
     pill.innerText = `Ch. ${ch.id}`;
-    pill.addEventListener('click', () => { activeChapterFilter = ch.id; renderCode(); renderChapterPills(); });
+    pill.addEventListener('click', () => { 
+      activeChapterFilter = ch.id; 
+      activeMode === 'map' ? renderMap() : renderCode(); 
+      renderChapterPills(); 
+    });
     pillTrack.appendChild(pill);
   });
 }
@@ -149,7 +159,6 @@ document.addEventListener('pointerdown', (e) => { if (sheet && !sheet.contains(e
 
 if (searchBar) searchBar.addEventListener('input', (e) => { searchQuery = e.target.value; renderCode(); });
 
-// Updated Mode UI Listeners
 if (linearBtn) linearBtn.addEventListener('click', () => { activeMode = 'linear'; updateModeUI(linearBtn, [offencesBtn, mapBtn]); renderCode(); });
 if (offencesBtn) offencesBtn.addEventListener('click', () => { activeMode = 'offences'; updateModeUI(offencesBtn, [linearBtn, mapBtn]); renderCode(); });
 if (mapBtn) mapBtn.addEventListener('click', () => { activeMode = 'map'; updateModeUI(mapBtn, [linearBtn, offencesBtn]); renderMap(); });
