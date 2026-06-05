@@ -3,14 +3,12 @@ let loadedSections = [];
 let activeMode = 'linear';
 let searchQuery = '';
 let activeChapterFilter = 'ALL';
-let pressTimer;
 
 // DOM Link Nodes
 const container = document.getElementById('statute-container');
 const linearBtn = document.getElementById('btn-linear');
 const offencesBtn = document.getElementById('btn-offences');
 const searchBar = document.getElementById('search-bar');
-const clearSearch = document.getElementById('clear-search');
 const pillTrack = document.getElementById('chapter-pills');
 const sheet = document.getElementById('footnote-sheet');
 const sheetText = document.getElementById('footnote-text');
@@ -66,7 +64,7 @@ function renderCode() {
 
   let filtered = loadedSections.filter(s => s.mode_tags && s.mode_tags.includes(activeMode));
   if (activeMode === 'offences') {
-    filtered = filtered.filter(s => (s.chapter_title && s.chapter_title.toLowerCase().includes('offence')) || (s.title && s.title.toLowerCase().includes('offence')));
+    filtered = filtered.filter(s => (s.chapter_title?.toLowerCase().includes('offence')) || (s.title?.toLowerCase().includes('offence')));
   }
   if (activeChapterFilter !== 'ALL') {
     filtered = filtered.filter(s => s.chapter === activeChapterFilter);
@@ -81,35 +79,42 @@ function renderCode() {
     const card = document.createElement('div');
     card.className = 'statute-card';
     
-    // Footnote Logic
-    let txt = section.content || '';
+    // 1. Content Rendering (Handles both legacy 'content' and new 'content_parts')
+    let contentHTML = '';
+    if (section.content_parts) {
+      contentHTML = section.content_parts.map(p => `<p class="part-${p.type}">${p.text}</p>`).join('');
+    } else {
+      contentHTML = `<p class="statute-text">${section.content || ''}</p>`;
+    }
+
+    // 2. Footnote & Definition Logic
     if (section.footnotes) {
       section.footnotes.forEach(fn => {
-        const regex = new RegExp(`\\b(${fn.marker})\\b`, 'g');
-        txt = txt.replace(regex, `<span class="footnote-trigger" data-footnote-text="${fn.text}">$1</span>`);
+        const regex = new RegExp(`\\b(${fn.marker})\\b`, 'gi');
+        const triggerClass = fn.is_definition ? 'definition-trigger' : 'footnote-trigger';
+        contentHTML = contentHTML.replace(regex, `<span class="${triggerClass}" data-footnote-text="${fn.text}">$1</span>`);
       });
     }
 
-    // Sentencing Ladder Logic
+    // 3. Sentencing Ladder Logic
     let ladderHTML = '';
     if (section.sentencing_ladder) {
-      const steps = section.sentencing_ladder.map(step => 
-        `<div class="step"><strong>${step.condition}:</strong> ${step.penalty}</div>`
-      ).join('');
-      
-      ladderHTML = `
-        <details class="sentencing-ladder">
-          <summary>🪜 View Sentencing Escalation</summary>
-          <div class="ladder-steps">${steps}</div>
-        </details>
-      `;
+      const steps = section.sentencing_ladder.map(s => `<div class="step"><strong>${s.condition}:</strong> ${s.penalty}</div>`).join('');
+      ladderHTML = `<details class="sentencing-ladder"><summary>🪜 View Sentencing Escalation</summary><div class="ladder-steps">${steps}</div></details>`;
+    }
+
+    // 4. Related Sections Logic
+    let relatedHTML = '';
+    if (section.related_sections) {
+      relatedHTML = `<div class="related-bar"><strong>See also:</strong> ${section.related_sections.map(rs => `<span class="link">Sec. ${rs.section}</span>`).join(', ')}</div>`;
     }
 
     card.innerHTML = `
       <div class="meta-tag">Chapter ${section.chapter || ''}: ${section.chapter_title || ''}</div>
       <h3 class="section-heading">Sec. ${section.section_number || ''}: ${section.title || ''}</h3>
-      <p class="statute-text">${txt}</p>
+      ${contentHTML}
       ${ladderHTML}
+      ${relatedHTML}
     `;
     container.appendChild(card);
   });
@@ -117,14 +122,14 @@ function renderCode() {
 }
 
 function setupInteractionListeners() {
-  document.querySelectorAll('.footnote-trigger').forEach(trigger => {
+  document.querySelectorAll('.footnote-trigger, .definition-trigger').forEach(trigger => {
     trigger.addEventListener('click', () => showSheet(trigger.getAttribute('data-footnote-text')));
   });
 }
 
 function showSheet(text) { if (sheetText && sheet) { sheetText.innerText = text; sheet.classList.add('visible'); } }
 function hideSheet() { if (sheet) sheet.classList.remove('visible'); }
-document.addEventListener('pointerdown', (e) => { if (sheet && !sheet.contains(e.target) && !e.target.classList.contains('footnote-trigger')) hideSheet(); });
+document.addEventListener('pointerdown', (e) => { if (sheet && !sheet.contains(e.target) && !e.target.matches('.footnote-trigger, .definition-trigger')) hideSheet(); });
 
 if (searchBar) searchBar.addEventListener('input', (e) => { searchQuery = e.target.value; renderCode(); });
 if (linearBtn) linearBtn.addEventListener('click', () => { activeMode = 'linear'; activeChapterFilter = 'ALL'; updateModeUI(linearBtn, offencesBtn); });
