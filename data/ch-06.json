@@ -5,7 +5,7 @@
     "chapter": "VI",
     "chapter_title": "Offences against the State",
     "mode_tags": ["linear", "offences"],
-    "map_node": { "x": 50, "y": 100 },
+    "map_node": { "x": 50, "y": 20 },
     "content": "Whoever wages war against Pakistan, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine.",
     "related_sections": [{ "section": "124A", "title": "Sedition" }],
     "footnotes": [
@@ -22,7 +22,7 @@
     "chapter": "VI",
     "chapter_title": "Offences against the State",
     "mode_tags": ["linear", "offences"],
-    "map_node": { "x": 250, "y": 100 },
+    "map_node": { "x": 250, "y": 20 },
     "content": "Whoever by words... brings or attempts to bring into hatred or contempt, or excites or attempts to excite disaffection towards, the Federal or Provincial Government established by law shall be punished...",
     "related_sections": [{ "section": "121", "title": "Waging War" }],
     "footnotes": [
