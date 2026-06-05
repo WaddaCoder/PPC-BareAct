@@ -40,7 +40,6 @@ async function initApp() {
 function renderChapterPills() {
   if (!pillTrack) return;
   pillTrack.innerHTML = '';
-  // Logic: Show all if linear, filter by "Offence" in title if offences mode
   let targetChapters = (activeMode === 'offences') 
     ? globalChapters.filter(ch => ch.title.toLowerCase().includes('offence'))
     : globalChapters;
@@ -81,6 +80,8 @@ function renderCode() {
   filtered.forEach(section => {
     const card = document.createElement('div');
     card.className = 'statute-card';
+    
+    // Footnote Logic
     let txt = section.content || '';
     if (section.footnotes) {
       section.footnotes.forEach(fn => {
@@ -88,10 +89,28 @@ function renderCode() {
         txt = txt.replace(regex, `<span class="footnote-trigger" data-footnote-text="${fn.text}">$1</span>`);
       });
     }
+
+    // Sentencing Ladder Logic
+    let ladderHTML = '';
+    if (section.sentencing_ladder) {
+      const steps = section.sentencing_ladder.map(step => 
+        `<div class="step"><strong>${step.condition}:</strong> ${step.penalty}</div>`
+      ).join('');
+      
+      ladderHTML = `
+        <details class="sentencing-ladder">
+          <summary>🪜 View Sentencing Escalation</summary>
+          <div class="ladder-steps">${steps}</div>
+        </details>
+      `;
+    }
+
     card.innerHTML = `
       <div class="meta-tag">Chapter ${section.chapter || ''}: ${section.chapter_title || ''}</div>
       <h3 class="section-heading">Sec. ${section.section_number || ''}: ${section.title || ''}</h3>
-      <p class="statute-text">${txt}</p>`;
+      <p class="statute-text">${txt}</p>
+      ${ladderHTML}
+    `;
     container.appendChild(card);
   });
   setupInteractionListeners();
