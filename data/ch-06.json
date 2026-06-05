@@ -1,16 +1,18 @@
 [
   {
     "section_number": "121",
-    "title": "Waging or attempting to wage war or abetting waging of war against Pakistan",
+    "title": "Waging or attempting to wage war against Pakistan",
     "chapter": "VI",
     "chapter_title": "Offences against the State",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 100 },
     "content": "Whoever wages war against Pakistan, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine.",
+    "related_sections": [{ "section": "124A", "title": "Sedition" }],
     "footnotes": [
       {
         "id": "fn-121-1",
         "marker": "wages war",
-        "text": "The intent matters over numbers: 'Waging war' does not require a formal military structure. Any organized rising or insurrection using violence to challenge or overthrow the authority of the sovereign State qualifies."
+        "text": "The intent matters over numbers: Any organized rising or insurrection using violence to challenge or overthrow the authority of the sovereign State qualifies."
       }
     ]
   },
@@ -19,13 +21,15 @@
     "title": "Sedition",
     "chapter": "VI",
     "chapter_title": "Offences against the State",
-    "mode_tags": ["linear"],
-    "content": "Whoever by words, either spoken or written, or by signs, or by visible representation, or otherwise, brings or attempts to bring into hatred or contempt, or excites or attempts to excite disaffection towards, the Federal or Provincial Government established by law shall be punished with imprisonment for life, to which fine may be added, or with imprisonment which may extend to three years, to which fine may be added, or with fine.",
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 250, "y": 100 },
+    "content": "Whoever by words... brings or attempts to bring into hatred or contempt, or excites or attempts to excite disaffection towards, the Federal or Provincial Government established by law shall be punished...",
+    "related_sections": [{ "section": "121", "title": "Waging War" }],
     "footnotes": [
       {
         "id": "fn-124a-1",
         "marker": "disaffection",
-        "text": "Historical Context: Codified originally under British rule in 1870. Disaffection historically includes disloyalty and all feelings of enmity, though legitimate political criticism without inciting public disorder or violence is protected."
+        "text": "Disaffection includes disloyalty and all feelings of enmity, though legitimate political criticism without inciting public disorder or violence is protected."
       }
     ]
   }
