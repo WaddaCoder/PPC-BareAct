@@ -71,7 +71,6 @@ function renderMap() {
     mapCanvas.appendChild(node);
   });
 }
-}
 
 function renderChapterPills() {
   if (!pillTrack) return;
