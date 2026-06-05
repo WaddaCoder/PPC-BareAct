@@ -35,6 +35,23 @@ async function initApp() {
   }
 }
 
+// Global navigation function to jump to specific sections
+window.scrollToSection = function(sectionNumber) {
+  searchQuery = '';
+  activeChapterFilter = 'ALL';
+  renderCode();
+
+  const headings = Array.from(document.querySelectorAll('.section-heading'));
+  const target = headings.find(h => h.innerText.includes(`Sec. ${sectionNumber}:`));
+  
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    target.parentElement.style.transition = 'background 0.5s';
+    target.parentElement.style.backgroundColor = '#e8f0fe';
+    setTimeout(() => { target.parentElement.style.backgroundColor = ''; }, 2000);
+  }
+};
+
 function renderChapterPills() {
   if (!pillTrack) return;
   pillTrack.innerHTML = '';
@@ -79,7 +96,7 @@ function renderCode() {
     const card = document.createElement('div');
     card.className = 'statute-card';
     
-    // 1. Content Rendering (Handles both legacy 'content' and new 'content_parts')
+    // 1. Content Rendering
     let contentHTML = '';
     if (section.content_parts) {
       contentHTML = section.content_parts.map(p => `<p class="part-${p.type}">${p.text}</p>`).join('');
@@ -103,10 +120,14 @@ function renderCode() {
       ladderHTML = `<details class="sentencing-ladder"><summary>🪜 View Sentencing Escalation</summary><div class="ladder-steps">${steps}</div></details>`;
     }
 
-    // 4. Related Sections Logic
+    // 4. Related Sections Logic (Updated with scrollToSection)
     let relatedHTML = '';
     if (section.related_sections) {
-      relatedHTML = `<div class="related-bar"><strong>See also:</strong> ${section.related_sections.map(rs => `<span class="link">Sec. ${rs.section}</span>`).join(', ')}</div>`;
+      relatedHTML = `<div class="related-bar"><strong>See also:</strong> ${
+        section.related_sections.map(rs => 
+          `<span class="link" onclick="scrollToSection('${rs.section}')">Sec. ${rs.section}</span>`
+        ).join(', ')
+      }</div>`;
     }
 
     card.innerHTML = `
