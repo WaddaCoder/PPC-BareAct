@@ -79,9 +79,17 @@ function renderChapterPills() {
   if (!pillTrack) return;
   pillTrack.innerHTML = '';
   
-  let targetChapters = (activeMode === 'offences') 
-    ? globalChapters.filter(ch => ch.title.toLowerCase().includes('offence'))
-    : globalChapters;
+  // Logic to determine which chapters to show based on the active mode
+  let targetChapters = globalChapters;
+
+  if (activeMode === 'offences') {
+    targetChapters = globalChapters.filter(ch => ch.title.toLowerCase().includes('offence'));
+  } else if (activeMode === 'map') {
+    // NEW: Filter to only show chapters that contain at least one section with a 'map_node'
+    targetChapters = globalChapters.filter(ch => 
+      loadedSections.some(s => s.chapter === ch.id && s.map_node)
+    );
+  }
   
   const allPill = document.createElement('button');
   allPill.className = `pill ${activeChapterFilter === 'ALL' ? 'active' : ''}`;
