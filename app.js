@@ -58,15 +58,19 @@ function renderMap() {
   container.innerHTML = `<div class="map-canvas" id="map-canvas"></div>`;
   const mapCanvas = document.getElementById('map-canvas');
   
-  loadedSections.forEach((section, index) => {
+  // Only map sections that have 'map_node' coordinates
+  const mappedSections = loadedSections.filter(s => s.map_node);
+  
+  mappedSections.forEach((section) => {
     const node = document.createElement('div');
     node.className = 'map-node';
-    node.style.left = `${50 + (index * 130)}px`;
-    node.style.top = '50px';
+    node.style.left = `${section.map_node.x}px`;
+    node.style.top = `${section.map_node.y}px`;
     node.innerHTML = `Sec. ${section.section_number}`;
     node.onclick = () => scrollToSection(section.section_number);
     mapCanvas.appendChild(node);
   });
+}
 }
 
 function renderChapterPills() {
