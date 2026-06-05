@@ -37,7 +37,6 @@ body {
   gap: 12px;
 }
 
-/* Linear vs Offences Switch */
 .toggle-container {
   display: flex;
   background: #f1f3f4;
@@ -67,7 +66,6 @@ body {
   box-shadow: 0 1px 4px rgba(0,0,0,0.15);
 }
 
-/* Command Dial Search Input Box */
 .search-wrapper {
   position: relative;
   width: 100%;
@@ -105,7 +103,6 @@ body {
   cursor: pointer;
 }
 
-/* Horizontal Table of Contents Pill-Track */
 .pill-track {
   display: flex;
   gap: 8px;
@@ -114,11 +111,11 @@ body {
   max-width: 440px;
   margin: 0 auto;
   padding: 2px 0 4px 0;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 
 .pill-track::-webkit-scrollbar {
-  display: none; /* Chrome/Safari/Edge */
+  display: none;
 }
 
 .pill {
@@ -146,7 +143,7 @@ body {
   padding: 16px;
   max-width: 470px;
   margin: 0 auto;
-  padding-bottom: 140px; /* Leave breathing space for bottom footnote sheet */
+  padding-bottom: 140px;
 }
 
 .statute-card {
@@ -180,7 +177,38 @@ body {
   color: #3c4043;
 }
 
-/* --- 4. TEXT INTERACTION LAYERS (FOOTNOTES & MARKS) --- */
+/* --- 4. SENTENCING LADDER --- */
+.sentencing-ladder {
+  margin-top: 15px;
+  padding: 12px;
+  background: #fdfdfd;
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sentencing-ladder summary {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  list-style: none;
+  outline: none;
+}
+
+.ladder-steps {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.step {
+  padding: 4px 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* --- 5. TEXT INTERACTION LAYERS (FOOTNOTES & MARKS) --- */
 .footnote-trigger {
   border-bottom: 2px dashed var(--accent);
   background-color: var(--accent-light);
@@ -191,13 +219,13 @@ body {
 }
 
 .search-highlight {
-  background-color: #ffd600; /* High-Visibility Search Yellow */
+  background-color: #ffd600;
   color: #000000;
   padding: 0 2px;
   border-radius: 2px;
 }
 
-/* --- 5. INTERACTIVE BOTTOM OVERLAY SHEET --- */
+/* --- 6. INTERACTIVE BOTTOM OVERLAY SHEET --- */
 .bottom-sheet {
   position: fixed;
   bottom: 0;
@@ -232,7 +260,7 @@ body {
   color: #3c4043;
 }
 
-/* --- 6. UTILITY ARCHITECTURE --- */
+/* --- 7. UTILITY ARCHITECTURE --- */
 .empty-state {
   text-align: center;
   color: var(--text-muted);
