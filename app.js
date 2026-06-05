@@ -55,14 +55,15 @@ window.scrollToSection = function(sectionNumber) {
 };
 
 function renderMap() {
+  if (!container) return;
   container.innerHTML = `<div class="map-canvas" id="map-canvas"></div>`;
   const mapCanvas = document.getElementById('map-canvas');
   
+  // If no chapter is selected, don't draw anything (prevent overlay)
+  if (!activeChapterFilter) return;
+
   // Filter sections by map_node existence AND active chapter filter
-  let mappedSections = loadedSections.filter(s => s.map_node);
-  if (activeChapterFilter !== 'ALL') {
-    mappedSections = mappedSections.filter(s => s.chapter === activeChapterFilter);
-  }
+  let mappedSections = loadedSections.filter(s => s.map_node && s.chapter === activeChapterFilter);
   
   mappedSections.forEach((section) => {
     const node = document.createElement('div');
@@ -96,7 +97,7 @@ function renderChapterPills() {
     allPill.innerText = 'All Chapters';
     allPill.addEventListener('click', () => { 
       activeChapterFilter = 'ALL'; 
-      activeMode === 'map' ? renderMap() : renderCode(); 
+      renderCode(); 
       renderChapterPills(); 
     });
     pillTrack.appendChild(allPill);
@@ -170,7 +171,19 @@ if (searchBar) searchBar.addEventListener('input', (e) => { searchQuery = e.targ
 
 if (linearBtn) linearBtn.addEventListener('click', () => { activeMode = 'linear'; updateModeUI(linearBtn, [offencesBtn, mapBtn]); renderCode(); });
 if (offencesBtn) offencesBtn.addEventListener('click', () => { activeMode = 'offences'; updateModeUI(offencesBtn, [linearBtn, mapBtn]); renderCode(); });
-if (mapBtn) mapBtn.addEventListener('click', () => { activeMode = 'map'; updateModeUI(mapBtn, [linearBtn, offencesBtn]); renderMap(); });
+if (mapBtn) mapBtn.addEventListener('click', () => { 
+  activeMode = 'map'; 
+  updateModeUI(mapBtn, [linearBtn, offencesBtn]); 
+  
+  // Set default to first available mapped chapter
+  const firstMappedChapter = globalChapters.find(ch => 
+    loadedSections.some(s => s.chapter === ch.id && s.map_node)
+  );
+  activeChapterFilter = firstMappedChapter ? firstMappedChapter.id : null;
+  
+  renderMap(); 
+  renderChapterPills();
+});
 
 function updateModeUI(active, inactives) {
   active.classList.add('active');
