@@ -5,7 +5,9 @@
     "chapter": "VIII",
     "chapter_title": "Offences against Public Tranquility",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 220 },
     "content": "An assembly of five or more persons is designated an 'unlawful assembly', if the common object of the persons composing that assembly is: First.—To overawe by criminal force, or show of criminal force, the Federal or Provincial Government or any public servant; Second.—To resist the execution of any law, or of any legal process; Third.—To commit any mischief or criminal trespass, or other offence; Fourth.—By means of criminal force, or show of criminal force, to enforce any right or supposed right; or Fifth.—By means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit what he is legally entitled to do.",
+    "related_sections": [{ "section": "146", "title": "Rioting" }, { "section": "149", "title": "Liability for common object" }],
     "footnotes": [
       {
         "id": "fn-141-1",
@@ -19,8 +21,10 @@
     "title": "Rioting",
     "chapter": "VIII",
     "chapter_title": "Offences against Public Tranquility",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 250, "y": 220 },
     "content": "Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting.",
+    "related_sections": [{ "section": "141", "title": "Unlawful assembly" }],
     "footnotes": [
       {
         "id": "fn-146-1",
@@ -34,8 +38,10 @@
     "title": "Every member of unlawful assembly guilty of offence committed in prosecution of common object",
     "chapter": "VIII",
     "chapter_title": "Offences against Public Tranquility",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 450, "y": 220 },
     "content": "If an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence.",
+    "related_sections": [{ "section": "141", "title": "Unlawful assembly" }],
     "footnotes": [
       {
         "id": "fn-149-1",
@@ -49,7 +55,8 @@
     "title": "Affray",
     "chapter": "VIII",
     "chapter_title": "Offences against Public Tranquility",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 650, "y": 220 },
     "content": "When two or more persons, by fighting in a public place, disturb the public peace, they are said to 'commit an affray'.",
     "footnotes": [
       {
