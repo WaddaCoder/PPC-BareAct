@@ -297,3 +297,50 @@ body {
 .hidden { 
   display: none !important; 
 }
+/* --- 8. VISUAL MAP ARCHITECTURE --- */
+.map-canvas {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow-x: auto;
+  background: var(--bg-primary);
+  padding: 20px;
+}
+
+.map-node {
+  position: absolute;
+  background: var(--surface);
+  border: 2px solid var(--accent);
+  padding: 16px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--accent);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  min-width: 100px;
+}
+
+.map-node:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(26, 115, 232, 0.2);
+  background: var(--accent-light);
+}
+
+/* Optional: Connectors (SVG could be added later for lines) */
+.map-node::after {
+  content: "→";
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-weight: bold;
+}
+
+/* Hide the last arrow */
+.map-node:last-child::after {
+  content: "";
+}
