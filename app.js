@@ -1,6 +1,6 @@
 let globalChapters = [];
 let loadedSections = [];
-let activeMode = 'linear';
+let activeMode = 'linear'; // 'linear', 'offences', or 'map'
 let searchQuery = '';
 let activeChapterFilter = 'ALL';
 
@@ -8,6 +8,7 @@ let activeChapterFilter = 'ALL';
 const container = document.getElementById('statute-container');
 const linearBtn = document.getElementById('btn-linear');
 const offencesBtn = document.getElementById('btn-offences');
+const mapBtn = document.getElementById('btn-map'); // New: Map Button
 const searchBar = document.getElementById('search-bar');
 const pillTrack = document.getElementById('chapter-pills');
 const sheet = document.getElementById('footnote-sheet');
@@ -35,10 +36,11 @@ async function initApp() {
   }
 }
 
-// Global navigation function to jump to specific sections
 window.scrollToSection = function(sectionNumber) {
+  activeMode = 'linear';
   searchQuery = '';
   activeChapterFilter = 'ALL';
+  updateModeUI(linearBtn, [offencesBtn, mapBtn]);
   renderCode();
 
   const headings = Array.from(document.querySelectorAll('.section-heading'));
@@ -52,9 +54,26 @@ window.scrollToSection = function(sectionNumber) {
   }
 };
 
+function renderMap() {
+  container.innerHTML = `<div class="map-canvas" id="map-canvas"></div>`;
+  const mapCanvas = document.getElementById('map-canvas');
+  
+  loadedSections.forEach((section, index) => {
+    const node = document.createElement('div');
+    node.className = 'map-node';
+    node.style.left = `${50 + (index * 130)}px`;
+    node.style.top = '50px';
+    node.innerHTML = `Sec. ${section.section_number}`;
+    node.onclick = () => scrollToSection(section.section_number);
+    mapCanvas.appendChild(node);
+  });
+}
+
 function renderChapterPills() {
   if (!pillTrack) return;
   pillTrack.innerHTML = '';
+  if (activeMode === 'map') return; // Hide pills in map view
+  
   let targetChapters = (activeMode === 'offences') 
     ? globalChapters.filter(ch => ch.title.toLowerCase().includes('offence'))
     : globalChapters;
@@ -75,7 +94,7 @@ function renderChapterPills() {
 }
 
 function renderCode() {
-  if (!container) return;
+  if (!container || activeMode === 'map') return;
   container.innerHTML = '';
   const cleanQuery = searchQuery.trim().toLowerCase();
 
@@ -96,15 +115,8 @@ function renderCode() {
     const card = document.createElement('div');
     card.className = 'statute-card';
     
-    // 1. Content Rendering
-    let contentHTML = '';
-    if (section.content_parts) {
-      contentHTML = section.content_parts.map(p => `<p class="part-${p.type}">${p.text}</p>`).join('');
-    } else {
-      contentHTML = `<p class="statute-text">${section.content || ''}</p>`;
-    }
+    let contentHTML = section.content_parts ? section.content_parts.map(p => `<p class="part-${p.type}">${p.text}</p>`).join('') : `<p class="statute-text">${section.content || ''}</p>`;
 
-    // 2. Footnote & Definition Logic
     if (section.footnotes) {
       section.footnotes.forEach(fn => {
         const regex = new RegExp(`\\b(${fn.marker})\\b`, 'gi');
@@ -113,30 +125,10 @@ function renderCode() {
       });
     }
 
-    // 3. Sentencing Ladder Logic
-    let ladderHTML = '';
-    if (section.sentencing_ladder) {
-      const steps = section.sentencing_ladder.map(s => `<div class="step"><strong>${s.condition}:</strong> ${s.penalty}</div>`).join('');
-      ladderHTML = `<details class="sentencing-ladder"><summary>🪜 View Sentencing Escalation</summary><div class="ladder-steps">${steps}</div></details>`;
-    }
+    let ladderHTML = section.sentencing_ladder ? `<details class="sentencing-ladder"><summary>🪜 View Sentencing Escalation</summary><div class="ladder-steps">${section.sentencing_ladder.map(s => `<div class="step"><strong>${s.condition}:</strong> ${s.penalty}</div>`).join('')}</div></details>` : '';
+    let relatedHTML = section.related_sections ? `<div class="related-bar"><strong>See also:</strong> ${section.related_sections.map(rs => `<span class="link" onclick="scrollToSection('${rs.section}')">Sec. ${rs.section}</span>`).join(', ')}</div>` : '';
 
-    // 4. Related Sections Logic (Updated with scrollToSection)
-    let relatedHTML = '';
-    if (section.related_sections) {
-      relatedHTML = `<div class="related-bar"><strong>See also:</strong> ${
-        section.related_sections.map(rs => 
-          `<span class="link" onclick="scrollToSection('${rs.section}')">Sec. ${rs.section}</span>`
-        ).join(', ')
-      }</div>`;
-    }
-
-    card.innerHTML = `
-      <div class="meta-tag">Chapter ${section.chapter || ''}: ${section.chapter_title || ''}</div>
-      <h3 class="section-heading">Sec. ${section.section_number || ''}: ${section.title || ''}</h3>
-      ${contentHTML}
-      ${ladderHTML}
-      ${relatedHTML}
-    `;
+    card.innerHTML = `<div class="meta-tag">Chapter ${section.chapter || ''}: ${section.chapter_title || ''}</div><h3 class="section-heading">Sec. ${section.section_number || ''}: ${section.title || ''}</h3>${contentHTML}${ladderHTML}${relatedHTML}`;
     container.appendChild(card);
   });
   setupInteractionListeners();
@@ -153,12 +145,16 @@ function hideSheet() { if (sheet) sheet.classList.remove('visible'); }
 document.addEventListener('pointerdown', (e) => { if (sheet && !sheet.contains(e.target) && !e.target.matches('.footnote-trigger, .definition-trigger')) hideSheet(); });
 
 if (searchBar) searchBar.addEventListener('input', (e) => { searchQuery = e.target.value; renderCode(); });
-if (linearBtn) linearBtn.addEventListener('click', () => { activeMode = 'linear'; activeChapterFilter = 'ALL'; updateModeUI(linearBtn, offencesBtn); });
-if (offencesBtn) offencesBtn.addEventListener('click', () => { activeMode = 'offences'; activeChapterFilter = 'ALL'; updateModeUI(offencesBtn, linearBtn); });
 
-function updateModeUI(active, inactive) {
-  active.classList.add('active'); inactive.classList.remove('active');
-  renderChapterPills(); renderCode();
+// Updated Mode UI Listeners
+if (linearBtn) linearBtn.addEventListener('click', () => { activeMode = 'linear'; updateModeUI(linearBtn, [offencesBtn, mapBtn]); renderCode(); });
+if (offencesBtn) offencesBtn.addEventListener('click', () => { activeMode = 'offences'; updateModeUI(offencesBtn, [linearBtn, mapBtn]); renderCode(); });
+if (mapBtn) mapBtn.addEventListener('click', () => { activeMode = 'map'; updateModeUI(mapBtn, [linearBtn, offencesBtn]); renderMap(); });
+
+function updateModeUI(active, inactives) {
+  active.classList.add('active');
+  inactives.forEach(btn => btn.classList.remove('active'));
+  renderChapterPills();
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
