@@ -5,6 +5,7 @@
     "chapter": "XVII",
     "chapter_title": "Offences Against Property",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 100 },
     "content_parts": [{ "type": "rule", "text": "Whoever, intending to take dishonestly any moveable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft." }],
     "related_sections": [
       { "section": "379", "title": "Punishment for Theft" },
@@ -35,6 +36,7 @@
     "chapter": "XVII",
     "chapter_title": "Offences Against Property",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 250 },
     "content": "Whoever intentionally puts any person in fear of any injury to that person... commits 'extortion'.",
     "related_sections": [{ "section": "390", "title": "Robbery" }],
     "sentencing_ladder": [
@@ -48,6 +50,7 @@
     "chapter": "XVII",
     "chapter_title": "Offences Against Property",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 300, "y": 175 },
     "content": "In all robbery there is either theft or extortion...",
     "related_sections": [
         { "section": "378", "title": "Theft" },
@@ -63,6 +66,7 @@
     "chapter": "XVII",
     "chapter_title": "Offences Against Property",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 200, "y": 50 },
     "content": "Whoever dishonestly misappropriates or converts to his own use any moveable property, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
     "related_sections": [{ "section": "378", "title": "Theft" }]
   }
