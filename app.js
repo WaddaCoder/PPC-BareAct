@@ -19,20 +19,31 @@ async function initApp() {
     const response = await fetch('data/chapters.json');
     if (!response.ok) throw new Error("Could not find data/chapters.json");
     globalChapters = await response.json();
+    
     loadedSections = [];
     for (const ch of globalChapters) {
       try {
         const res = await fetch(`data/${ch.file}`);
-        if (res.ok) {
-          const data = await res.json();
-          loadedSections = loadedSections.concat(data);
+        if (!res.ok) throw new Error(`HTTP Error ${res.status}`);
+        
+        // This line is where the error from image_0fd9fe.png is triggered
+        const data = await res.json();
+        loadedSections = loadedSections.concat(data);
+      } catch (fileErr) {
+        // Improved logging to identify the problematic file
+        console.error(`CRITICAL: Failed to parse JSON in file 'data/${ch.file}':`, fileErr.message);
+        // Optional: Notify the user in the UI
+        if (container) {
+          container.innerHTML += `<div class="empty-state" style="color:red;">Error loading ${ch.file}: ${fileErr.message}</div>`;
         }
-      } catch (fileErr) { console.error("Skipped:", fileErr); }
+      }
     }
     renderChapterPills();
     renderCode();
   } catch (error) {
-    container.innerHTML = `<div class="empty-state">Error: ${error.message}</div>`;
+    if (container) {
+      container.innerHTML = `<div class="empty-state">App Init Error: ${error.message}</div>`;
+    }
   }
 }
 
@@ -147,7 +158,6 @@ function renderCode() {
 
     let ladderHTML = section.sentencing_ladder ? `<details class="sentencing-ladder"><summary>🪜 View Sentencing Escalation</summary><div class="ladder-steps">${section.sentencing_ladder.map(s => `<div class="step"><strong>${s.condition}:</strong> ${s.penalty}</div>`).join('')}</div></details>` : '';
     
-    // NEW: Lamp & Tutor Logic
     let contextHTML = '<div class="lamp-tutor-container">';
     if (section.illumination_lamp?.length > 0) {
       const ill = section.illumination_lamp[0];
