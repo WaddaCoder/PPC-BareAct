@@ -5,7 +5,9 @@
     "chapter": "XX",
     "chapter_title": "Offences Relating to Marriage",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 1620 },
     "content": "Any individual who, while an active legal marriage remains valid and subsisting, enters into a subsequent matrimonial union that is rendered legally void by reason of the continuation of the prior marriage, faces statutory penalties.",
+    "related_sections": [{ "section": "496", "title": "Matrimonial ceremony fraudulently performed" }],
     "footnotes": [
       {
         "id": "fn-24-1",
@@ -19,8 +21,10 @@
     "title": "Matrimonial ceremony fraudulently performed without lawful marriage",
     "chapter": "XX",
     "chapter_title": "Offences Relating to Marriage",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 250, "y": 1620 },
     "content": "Whoever dishonestly or with a fraudulent intention goes through the ceremony of marriage, knowing that he is not thereby lawfully married, shall be punished.",
+    "related_sections": [{ "section": "494", "title": "Subsequent matrimonial unions" }],
     "footnotes": [
       {
         "id": "fn-24-2",
