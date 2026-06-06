@@ -8,6 +8,13 @@
     "map_node": { "x": 50, "y": 320 },
     "content": "Whoever, being or expecting to be a public servant, accepts or obtains, or agrees to accept, or attempts to obtain from any person, for himself or for any other person, any gratification whatever, other than legal remuneration, as a motive or reward for doing or forbearing to do any official act... shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
     "related_sections": [{ "section": "162", "title": "Influencing public servant" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-161-1",
+        "scenario": "A, a public servant, induces Z to pay him a sum of money in order to secure a government contract for Z.",
+        "legal_effect": "A is guilty of accepting illegal gratification under Section 161."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-161-1",
@@ -41,6 +48,17 @@
     "mode_tags": ["linear", "offences"],
     "map_node": { "x": 450, "y": 320 },
     "content": "Whoever, being a public servant, knowingly disobeys any direction of the law as to the way in which he is to conduct himself as such public servant, intending to cause, or knowing it to be likely that he will by such disobedience cause, injury to any person, shall be punished with simple imprisonment for a term which may extend to one year, or with fine, or with both.",
+    "illumination_lamp": [
+      {
+        "id": "ill-166-1",
+        "scenario": "A, a public servant, knowingly disobeys a law meant to protect B's property rights, with the specific intent to cause B financial loss.",
+        "legal_effect": "A is liable under Section 166 for intentional disobedience of law."
+      }
+    ],
+    "media_tutor": {
+      "title": "Offences by Public Servants - Legal Analysis",
+      "url": "https://www.youtube.com/watch?v=6qI-3j0F4cs"
+    },
     "footnotes": [
       {
         "id": "fn-166-1",
