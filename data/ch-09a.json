@@ -8,6 +8,13 @@
     "map_node": { "x": 50, "y": 420 },
     "content": "Whoever gives a gratification to any person with the object of inducing him or any other person to exercise any electoral right or of rewarding any person for having exercised any such right... commits the offence of bribery.",
     "related_sections": [{ "section": "171C", "title": "Undue influence" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-171b-1",
+        "scenario": "A gives money to B to induce B to vote for a specific candidate.",
+        "legal_effect": "A is guilty of bribery at an election under Section 171B."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-171b-1",
@@ -19,12 +26,23 @@
   {
     "section_number": "171C",
     "title": "Undue influence at elections",
-    "chapter": "IXA",
+    "chapter": "IX-A",
     "chapter_title": "Offences Relating to Elections",
     "mode_tags": ["linear", "offences"],
     "map_node": { "x": 250, "y": 420 },
     "content": "Whoever voluntarily interferes or attempts to interfere with the free exercise of any electoral right commits the offence of undue influence at an election.",
     "related_sections": [{ "section": "171B", "title": "Bribery" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-171c-1",
+        "scenario": "A threatens B that if B votes for a certain candidate, B will face social excommunication or spiritual displeasure.",
+        "legal_effect": "A has committed the offence of undue influence under Section 171C."
+      }
+    ],
+    "media_tutor": {
+      "title": "Offences Relating to Elections - Legal Analysis",
+      "url": "https://www.youtube.com/watch?v=6qI-3j0F4cs"
+    },
     "footnotes": [
       {
         "id": "fn-171c-1",
