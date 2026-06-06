@@ -5,7 +5,11 @@
     "chapter": "XV",
     "chapter_title": "Offences relating to Religion",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 1020 },
     "content": "Whoever destroys, damages or defiles any place of worship, or any object held sacred by any class of persons with the intention of thereby insulting the religion of any class of persons or with the knowledge that any class of persons is likely to consider such destruction, damage or defilement as an insult to their religion, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+    "sentencing_ladder": [
+      { "condition": "Standard Offence", "penalty": "Up to 2 years imprisonment, or fine, or both" }
+    ],
     "footnotes": [
       {
         "id": "fn-295-1",
@@ -19,8 +23,12 @@
     "title": "Use of derogatory remarks, etc., in respect of the Holy Prophet",
     "chapter": "XV",
     "chapter_title": "Offences relating to Religion",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 250, "y": 1020 },
     "content": "Whoever by words, either spoken or written, or by visible representation, or by any imputation, innuendo, or insinuation, directly or indirectly, defiles the sacred name of the Holy Prophet Muhammad (peace be upon him) shall be punished with death, and shall also be liable to fine.",
+    "sentencing_ladder": [
+      { "condition": "Mandatory Penalty", "penalty": "Death and fine" }
+    ],
     "footnotes": [
       {
         "id": "fn-295c-1",
