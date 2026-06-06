@@ -3,34 +3,48 @@
     "section_number": "131",
     "title": "Abetting mutiny, or attempting to seduce a soldier, sailor or airman from his duty",
     "chapter": "VII",
-    "chapter_title": "Offences Relating to the Army, Navy & Air Force",
+    "chapter_title": "Of Offences Relating to the Army, Navy and Air Force",
     "mode_tags": ["linear", "offences"],
-    "map_node": { "x": 50, "y": 120 },
-    "content": "Whoever abets the committing of mutiny by an officer, soldier, sailor or airman, in the Army, Navy or Air Force, or attempts to seduce any such person from his allegiance or his duty, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
-    "related_sections": [{ "section": "133", "title": "Abetment of assault on superior officer" }],
+    "content": "Whoever abets the committing of mutiny by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of Pakistan, or attempts to seduce any such officer, soldier, sailor or airman from his allegiance or his duty, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
     "footnotes": [
       {
         "id": "fn-131-1",
-        "marker": "seduce",
-        "text": "The act of 'seducing' involves corrupting the loyalty of service members to the state, turning them against their constitutional duties or encouraging revolt."
+        "marker": "scope",
+        "text": "The terms 'officer', 'soldier', 'sailor', and 'airman' include any person subject to the Army Act, 1952, the Navy Ordinance, 1961, or the Air Force Act, 1953."
       }
     ]
+  },
+  {
+    "section_number": "132",
+    "title": "Abetment of mutiny, if mutiny is committed in consequence thereof",
+    "chapter": "VII",
+    "chapter_title": "Of Offences Relating to the Army, Navy and Air Force",
+    "mode_tags": ["linear", "offences"],
+    "content": "Whoever abets the committing of mutiny by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of Pakistan, shall, if mutiny be committed in consequence of that abetment, be punished with death or with imprisonment for life, or imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+    "footnotes": []
   },
   {
     "section_number": "133",
     "title": "Abetment of assault by soldier, sailor or airman on his superior officer, when in execution of his office",
     "chapter": "VII",
-    "chapter_title": "Offences Relating to the Army, Navy & Air Force",
+    "chapter_title": "Of Offences Relating to the Army, Navy and Air Force",
     "mode_tags": ["linear", "offences"],
-    "map_node": { "x": 250, "y": 120 },
-    "content": "Whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force, on any superior officer being in the execution of his office, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
-    "related_sections": [{ "section": "131", "title": "Abetting mutiny" }],
-    "footnotes": [
-      {
-        "id": "fn-133-1",
-        "marker": "superior officer",
-        "text": "This protects the chain of command. Even if the assault does not physically occur, the abetment (incitement) itself is a serious criminal offense."
-      }
-    ]
-  }
-]
+    "content": "Whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of Pakistan, on any superior officer being in the execution of his office, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
+    "footnotes": []
+  },
+  {
+    "section_number": "134",
+    "title": "Abetment of such assault, if the assault is committed",
+    "chapter": "VII",
+    "chapter_title": "Of Offences Relating to the Army, Navy and Air Force",
+    "mode_tags": ["linear", "offences"],
+    "content": "Whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of Pakistan, on any superior officer being in the execution of his office, shall, if such assault be committed in consequence of that abetment, be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+    "footnotes": []
+  },
+  {
+    "section_number": "135",
+    "title": "Abetment of desertion of soldier, sailor or airman",
+    "chapter": "VII",
+    "chapter_title": "Of Offences Relating to the Army, Navy and Air Force",
+    "mode_tags": ["linear", "offences"],
+    "content": "Whoever abets the desertion of any officer, soldier, sailor or airman, in the Army, Navy or Air Force of Pakistan, shall be punished with imprisonment of either descriptionNormally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
