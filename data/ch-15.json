@@ -10,6 +10,13 @@
     "sentencing_ladder": [
       { "condition": "Standard Offence", "penalty": "Up to 2 years imprisonment, or fine, or both" }
     ],
+    "illumination_lamp": [
+      {
+        "id": "ill-295-1",
+        "scenario": "A enters a place of worship and intentionally damages religious idols or scriptures to provoke a specific religious group.",
+        "legal_effect": "A is guilty of injuring/defiling a place of worship under Section 295."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-295-1",
@@ -29,6 +36,10 @@
     "sentencing_ladder": [
       { "condition": "Mandatory Penalty", "penalty": "Death and fine" }
     ],
+    "media_tutor": {
+      "title": "Offences Relating to Religion - Legal Analysis",
+      "url": "https://www.youtube.com/watch?v=6qI-3j0F4cs"
+    },
     "footnotes": [
       {
         "id": "fn-295c-1",
