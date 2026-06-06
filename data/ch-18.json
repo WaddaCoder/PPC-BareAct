@@ -5,7 +5,9 @@
     "chapter": "XVIII",
     "chapter_title": "Offences relating to Documents & Marks",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 1420 },
     "content": "Whoever makes any false document or part of a document, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery.",
+    "related_sections": [{ "section": "464", "title": "Making a false document" }],
     "footnotes": [
       {
         "id": "fn-463-1",
@@ -19,8 +21,10 @@
     "title": "Making a false document",
     "chapter": "XVIII",
     "chapter_title": "Offences relating to Documents & Marks",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 250, "y": 1420 },
     "content": "A person is said to make a false document—First.—Who dishonestly or fraudulently makes, signs, seals or executes a document or part of a document, or makes any mark denoting the execution of a document, with the intention of causing it to be believed that such document or part of a document was made, signed, sealed or executed by or by the authority of a person by whom or by whose authority he knows that it was not made, signed, sealed or executed...",
+    "related_sections": [{ "section": "463", "title": "Forgery" }],
     "footnotes": [
       {
         "id": "fn-464-1",
@@ -34,8 +38,12 @@
     "title": "Dishonestly issuing a cheque for repayment of loan, etc.",
     "chapter": "XVIII",
     "chapter_title": "Offences relating to Documents & Marks",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 450, "y": 1420 },
     "content": "Whoever dishonestly issues a cheque towards repayment of a loan or fulfillment of an obligation which is dishonoured on presentation, shall be punished with imprisonment which may extend to three years, or with fine, or with both, unless he can prove that he had made arrangements with his bank to ensure that the cheque would be honoured and that the bank was at fault in dishonouring the cheque.",
+    "sentencing_ladder": [
+      { "condition": "Standard Offence", "penalty": "Up to 3 years imprisonment, or fine, or both" }
+    ],
     "footnotes": [
       {
         "id": "fn-489f-1",
