@@ -5,7 +5,11 @@
     "chapter": "XXIII",
     "chapter_title": "Attempts to Commit Offences",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 1920 },
     "content": "Whoever attempts to commit an offence punishable by this Code with imprisonment for life or imprisonment, or to cause such an offence to be committed, and in such attempt does any act towards the commission of the offence, shall... be punished with imprisonment of any description provided for the offence, for a term which may extend to one-half of the longest term provided for that offence...",
+    "sentencing_ladder": [
+      { "condition": "Standard Attempt", "penalty": "Up to one-half of the longest term provided for the substantive offence" }
+    ],
     "footnotes": [
       {
         "id": "fn-511-1",
