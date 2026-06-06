@@ -5,7 +5,9 @@
     "chapter": "XII",
     "chapter_title": "Offences relating to Coin and Government Stamps",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 720 },
     "content": "Coin is metal used for the time being as money, and stamped and issued by the authority of some State or Sovereign Power in order to be so used.",
+    "related_sections": [{ "section": "231", "title": "Counterfeiting coin" }],
     "footnotes": [
       {
         "id": "fn-230-1",
@@ -19,8 +21,13 @@
     "title": "Counterfeiting coin",
     "chapter": "XII",
     "chapter_title": "Offences relating to Coin and Government Stamps",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 250, "y": 720 },
     "content": "Whoever counterfeits or knowingly performs any part of the process of counterfeiting coin, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+    "sentencing_ladder": [
+      { "condition": "Standard Offence", "penalty": "Up to 7 years imprisonment and fine" }
+    ],
+    "related_sections": [{ "section": "230", "title": "Coin defined" }],
     "footnotes": [
       {
         "id": "fn-231-1",
@@ -34,8 +41,13 @@
     "title": "Counterfeiting Government stamp",
     "chapter": "XII",
     "chapter_title": "Offences relating to Coin and Government Stamps",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 450, "y": 720 },
     "content": "Whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any stamp issued by Government for the purpose of revenue, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+    "sentencing_ladder": [
+      { "condition": "Aggravated Fiscal Fraud", "penalty": "Life imprisonment or up to 10 years and fine" }
+    ],
+    "related_sections": [{ "section": "231", "title": "Counterfeiting coin" }],
     "footnotes": [
       {
         "id": "fn-255-1",
