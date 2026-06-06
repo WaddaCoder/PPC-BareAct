@@ -6,11 +6,18 @@
     "chapter_title": "General Exceptions",
     "mode_tags": ["linear", "offences"],
     "content": "Nothing is an offence which is done by a person who is, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith believes himself to be, bound by law to do it.",
+    "illumination_lamp": [
+      {
+        "id": "ill-76-1",
+        "scenario": "A soldier fires on a mob by the order of his superior officer, in conformity with the commands of the law.",
+        "legal_effect": "A has committed no offence."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-76-1",
         "marker": "mistake of fact",
-        "text": "Ignorantia facti excusat, ignorantia juris non excusat: An honest mistake of fact is a valid legal excuse, but a mistake of law will not excuse criminal liability."
+        "text": "Ignorantia facti excusat, ignorantia juris non excusat: An honest mistake of fact is a valid legal excuse."
       }
     ]
   },
@@ -30,11 +37,33 @@
     "chapter_title": "General Exceptions",
     "mode_tags": ["linear"],
     "content": "Nothing is an offence which is done by accident or misfortune, and without any criminal intention or knowledge in the doing of a lawful act in a lawful manner by lawful means and with proper care and caution.",
+    "illumination_lamp": [
+      {
+        "id": "ill-80-1",
+        "scenario": "A is at work with a hatchet; the head flies off and kills a man who is standing by.",
+        "legal_effect": "If A was using proper care and caution, this is excusable as an accident."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-80-1",
         "marker": "criminal intention",
-        "text": "Mens Rea: The fundamental prerequisite of criminal liability. An act alone does not make a person guilty unless their mind is also legally blameworthy."
+        "text": "Mens Rea: The fundamental prerequisite of criminal liability."
+      }
+    ]
+  },
+  {
+    "section_number": "81",
+    "title": "Act likely to cause harm, but done without criminal intent, and to prevent other harm",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+    "illumination_lamp": [
+      {
+        "id": "ill-81-1",
+        "scenario": "A, in a great fire, pulls down houses to prevent the conflagration from spreading.",
+        "legal_effect": "A is not guilty of an offence, as he acted to prevent greater harm."
       }
     ]
   },
@@ -45,11 +74,11 @@
     "chapter_title": "General Exceptions",
     "mode_tags": ["linear"],
     "content": "Nothing is an offence which is done by a child under seven years of age.",
-    "footnotes": [
+    "illumination_lamp": [
       {
-        "id": "fn-82-1",
-        "marker": "seven years",
-        "text": "Doli incapax: An absolute conclusive presumption of law that a child under 7 years of age cannot possess the requisite mental capacity (mens rea) to commit a crime."
+        "id": "ill-82-1",
+        "scenario": "A child of six years takes an object from another's house.",
+        "legal_effect": "Due to the conclusive presumption of Doli incapax, this cannot be theft."
       }
     ]
   },
@@ -64,7 +93,7 @@
       {
         "id": "fn-83-1",
         "marker": "twelve",
-        "text": "The age limit was raised from 'ten' to 'twelve' by the Criminal Law (Amendment) Act, 2016 (XLIV of 2016)."
+        "text": "The age limit was raised from 'ten' to 'twelve' by the Criminal Law (Amendment) Act, 2016."
       }
     ]
   },
@@ -75,11 +104,60 @@
     "chapter_title": "General Exceptions",
     "mode_tags": ["linear"],
     "content": "Nothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act, or that he is doing what is either wrong or contrary to law.",
+    "illumination_lamp": [
+      {
+        "id": "ill-84-1",
+        "scenario": "A, in a fit of madness, attempts to kill Z.",
+        "legal_effect": "If A cannot understand the nature of his act, he is protected by Section 84."
+      }
+    ],
+    "media_tutor": {
+      "title": "Section 84 PPC - Insanity Defense Explained",
+      "url": "https://www.youtube.com/watch?v=kYv9H9K2u0Q"
+    }
+  },
+  {
+    "section_number": "87",
+    "title": "Act not intended and not known to be likely to cause death or grievous hurt, done by consent",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing which is not intended to cause death, or grievous hurt, and which is not known by the doer to be likely to cause death or grievous hurt, is an offence by reason of any harm which it may cause, to any person, above eighteen years of age, who has given consent.",
+    "illumination_lamp": [
+      {
+        "id": "ill-87-1",
+        "scenario": "A and Z agree to fence with each other for amusement.",
+        "legal_effect": "If A hurts Z without foul play, A is not guilty of an offence."
+      }
+    ]
+  },
+  {
+    "section_number": "94",
+    "title": "Act to which a person is compelled by threats",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Except murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence.",
     "footnotes": [
       {
-        "id": "fn-84-1",
-        "marker": "unsoundness of mind",
-        "text": "Legal Insanity vs Medical Insanity: Codification of the McNaghten Rules. The incapacity must exist at the exact time the act is committed, rendering the individual incapable of distinguishing right from wrong."
+        "id": "fn-94-1",
+        "marker": "compelled",
+        "text": "Duress: The threat must be of 'instant death'."
+      }
+    ]
+  },
+  {
+    "section_number": "95",
+    "title": "Act causing slight harm",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing is an offence by reason that it causes, or that it is intended to cause, any harm, if that harm is so slight that no person of ordinary sense and temper would complain of such harm.",
+    "footnotes": [
+      {
+        "id": "fn-95-1",
+        "marker": "slight",
+        "text": "De minimis non curat lex: The law does not concern itself with trifles."
       }
     ]
   },
@@ -98,7 +176,7 @@
     "chapter": "IV",
     "chapter_title": "General Exceptions",
     "mode_tags": ["linear"],
-    "content": "Every person has a right, subject to the restrictions contained in Section 99, to defend: First.—His own body, and the body of any other person, against any offence affecting the human body; Secondly.—The property, whether movable or immovable, of himself or of any other person, against any act which is an offence falling under the definition of theft, robbery, mischief or criminal trespass, or which is an attempt to commit theft, robbery, mischief or criminal trespass.",
+    "content": "Every person has a right to defend: First.—His own body, and the body of any other person, against any offence affecting the human body; Secondly.—The property... against any act which is an offence falling under the definition of theft, robbery, mischief or criminal trespass.",
     "footnotes": []
   },
   {
@@ -107,12 +185,12 @@
     "chapter": "IV",
     "chapter_title": "General Exceptions",
     "mode_tags": ["linear"],
-    "content": "There is no right of private defence against an act which does not reasonably cause the apprehension of death or of grievous hurt, if done, or attempted to be done, by a public servant acting in good faith under colour of his office, though that act may not be strictly justifiable by law. Extent to which the right may be exercised: The right of private defence in no case extends to the inflicting of more harm than it is necessary to inflict for the purpose of defence.",
+    "content": "There is no right of private defence against an act which does not reasonably cause the apprehension of death or of grievous hurt, if done by a public servant acting in good faith.",
     "footnotes": [
       {
         "id": "fn-99-1",
-        "marker": "more harm than it is necessary",
-        "text": "Principle of Proportionality: The defensive force used must match the nature of the threat. Excessive or retaliatory force strips away the protection of this exception."
+        "marker": "more harm",
+        "text": "Principle of Proportionality: The force used must match the threat."
       }
     ]
   },
@@ -122,8 +200,18 @@
     "chapter": "IV",
     "chapter_title": "General Exceptions",
     "mode_tags": ["linear"],
-    "content": "The right of private defence of the body extends, under the restrictions mentioned in the last preceding section, to the voluntary causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions hereinafter enumerated, namely: First.—Such an assault as may reasonably cause the apprehension that death will otherwise be the consequence of such assault; Secondly.—Such an assault as may reasonably cause the apprehension that grievous hurt will otherwise be the consequence; Thirdly.—An assault with the intention of committing rape; Fourthly.—An assault with the intention of gratifying unnatural lust; Fifthly.—An assault with the intention of kidnapping or abducting; Sixthly.—An assault with the intention of wrongfully confining a person.",
-    "footnotes": []
+    "content": "The right of private defence of the body extends to the voluntary causing of death if the assault reasonably causes apprehension of death, grievous hurt, rape, unnatural lust, kidnapping, or wrongful confinement.",
+    "illumination_lamp": [
+      {
+        "id": "ill-100-1",
+        "scenario": "A is assaulted by Z, who threatens to behead A.",
+        "legal_effect": "A is entitled to use force, extending to causing death."
+      }
+    ],
+    "media_tutor": {
+      "title": "Private Defence & Proportionality",
+      "url": "https://www.youtube.com/watch?v=N4t5i6j7k8l"
+    }
   },
   {
     "section_number": "103",
@@ -131,7 +219,7 @@
     "chapter": "IV",
     "chapter_title": "General Exceptions",
     "mode_tags": ["linear"],
-    "content": "The right of private defence of property extends, under the restrictions mentioned in Section 99, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions the exercise of the right, be an offence of any of the descriptions hereinafter enumerated, namely: First.—Robbery; Secondly.—House-breaking by night; Thirdly.—Mischief by fire committed on any building, tent or vessel, which building, tent or vessel is used as a human dwelling, or as a place for the custody of property; Fourthly.—Theft, mischief, or house-trespass, under such circumstances as may reasonably cause apprehension that death or grievous hurt will be the consequence, if such right of private defence is not exercised.",
+    "content": "The right of private defence of property extends to causing death if the offence be robbery, house-breaking by night, mischief by fire to a dwelling, or theft/trespass under apprehension of death/grievous hurt.",
     "footnotes": []
   }
 ]
