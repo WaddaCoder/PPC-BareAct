@@ -8,6 +8,13 @@
     "map_node": { "x": 50, "y": 1420 },
     "content": "Whoever makes any false document or part of a document, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery.",
     "related_sections": [{ "section": "464", "title": "Making a false document" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-463-1",
+        "scenario": "A, without Z's authority, affixes Z's seal to a document purporting to be a conveyance by Z of his estate, with the intention of selling the estate to B and defrauding Z.",
+        "legal_effect": "A has committed forgery under Section 463."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-463-1",
@@ -25,6 +32,13 @@
     "map_node": { "x": 250, "y": 1420 },
     "content": "A person is said to make a false document—First.—Who dishonestly or fraudulently makes, signs, seals or executes a document or part of a document, or makes any mark denoting the execution of a document, with the intention of causing it to be believed that such document or part of a document was made, signed, sealed or executed by or by the authority of a person by whom or by whose authority he knows that it was not made, signed, sealed or executed...",
     "related_sections": [{ "section": "463", "title": "Forgery" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-464-1",
+        "scenario": "A signs Z's name to a check, knowing he has no authority to do so, to make it appear that Z issued the check.",
+        "legal_effect": "A has made a false document as defined in Section 464."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-464-1",
@@ -44,6 +58,10 @@
     "sentencing_ladder": [
       { "condition": "Standard Offence", "penalty": "Up to 3 years imprisonment, or fine, or both" }
     ],
+    "media_tutor": {
+      "title": "Offences Relating to Documents and Property Marks - Legal Analysis",
+      "url": "https://www.youtube.com/watch?v=6qI-3j0F4cs"
+    },
     "footnotes": [
       {
         "id": "fn-489f-1",
