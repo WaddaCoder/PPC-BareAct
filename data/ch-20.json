@@ -8,6 +8,13 @@
     "map_node": { "x": 50, "y": 1620 },
     "content": "Any individual who, while an active legal marriage remains valid and subsisting, enters into a subsequent matrimonial union that is rendered legally void by reason of the continuation of the prior marriage, faces statutory penalties.",
     "related_sections": [{ "section": "496", "title": "Matrimonial ceremony fraudulently performed" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-494-1",
+        "scenario": "A, who is already legally married to B, goes through a marriage ceremony with C while the marriage with B is still subsisting and valid.",
+        "legal_effect": "A has committed the offence under Section 494."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-24-1",
@@ -25,6 +32,13 @@
     "map_node": { "x": 250, "y": 1620 },
     "content": "Whoever dishonestly or with a fraudulent intention goes through the ceremony of marriage, knowing that he is not thereby lawfully married, shall be punished.",
     "related_sections": [{ "section": "494", "title": "Subsequent matrimonial unions" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-496-1",
+        "scenario": "A, intending to deceive B into believing they are married, arranges a fake ceremony with a person posing as a religious official, knowing full well the ceremony has no legal standing.",
+        "legal_effect": "A is guilty of the offence under Section 496."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-24-2",
