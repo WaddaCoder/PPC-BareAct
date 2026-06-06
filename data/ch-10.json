@@ -8,6 +8,13 @@
     "map_node": { "x": 50, "y": 520 },
     "content": "Whoever absconds in order to avoid being served with a summons, notice or order proceeding from any public servant legally empowered as such public servant to issue the same, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
     "related_sections": [{ "section": "186", "title": "Obstructing public servant" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-172-1",
+        "scenario": "A, knowing that a warrant has been issued for his appearance before a court, intentionally leaves his residence and hides in another town to avoid being served.",
+        "legal_effect": "A is guilty of absconding to avoid service of summons under Section 172."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-172-1",
@@ -25,6 +32,17 @@
     "map_node": { "x": 250, "y": 520 },
     "content": "Whoever voluntarily obstructs any public servant in the discharge of his public functions, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to fifteen hundred rupees, or with both.",
     "related_sections": [{ "section": "172", "title": "Absconding to avoid summons" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-186-1",
+        "scenario": "A physical barrier is placed across a road by A to prevent a public servant from reaching a site to perform an official inspection.",
+        "legal_effect": "A has voluntarily obstructed a public servant in the discharge of public functions under Section 186."
+      }
+    ],
+    "media_tutor": {
+      "title": "Contempt of Lawful Authority - Legal Analysis",
+      "url": "https://www.youtube.com/watch?v=6qI-3j0F4cs"
+    },
     "footnotes": [
       {
         "id": "fn-186-1",
