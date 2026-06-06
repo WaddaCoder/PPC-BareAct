@@ -10,6 +10,13 @@
     "sentencing_ladder": [
       { "condition": "Standard Offence", "penalty": "Up to 3 months imprisonment, or fine up to 500 PKR, or both" }
     ],
+    "illumination_lamp": [
+      {
+        "id": "ill-491-1",
+        "scenario": "A, a nurse, is under contract to attend to Z, who is a bedridden invalid. A voluntarily abandons Z, leaving them without the necessary food or medicine.",
+        "legal_effect": "A is guilty of a criminal breach of contract under Section 491."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-491-1",
