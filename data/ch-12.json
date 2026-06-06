@@ -28,6 +28,13 @@
       { "condition": "Standard Offence", "penalty": "Up to 7 years imprisonment and fine" }
     ],
     "related_sections": [{ "section": "230", "title": "Coin defined" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-231-1",
+        "scenario": "A intentionally makes a metallic disc with a stamp mimicking a current coin to deceive the public.",
+        "legal_effect": "A has committed the offence of counterfeiting coin under Section 231."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-231-1",
@@ -48,6 +55,17 @@
       { "condition": "Aggravated Fiscal Fraud", "penalty": "Life imprisonment or up to 10 years and fine" }
     ],
     "related_sections": [{ "section": "231", "title": "Counterfeiting coin" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-255-1",
+        "scenario": "A knowingly produces a false stamp that imitates a Government revenue stamp to be used on legal documents.",
+        "legal_effect": "A is guilty of counterfeiting a Government stamp under Section 255."
+      }
+    ],
+    "media_tutor": {
+      "title": "Offences Relating to Coin and Stamps - Legal Analysis",
+      "url": "https://www.youtube.com/watch?v=6qI-3j0F4cs"
+    },
     "footnotes": [
       {
         "id": "fn-255-1",
