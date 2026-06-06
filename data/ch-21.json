@@ -8,6 +8,13 @@
     "map_node": { "x": 50, "y": 1720 },
     "content": "Whoever by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said... to defame that person.",
     "related_sections": [{ "section": "500", "title": "Punishment for defamation" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-499-1",
+        "scenario": "A says to B, 'I think Z is an honest man; he never stole B's watch,' intending to cause it to be believed that Z did steal B's watch.",
+        "legal_effect": "A has defamed Z under Section 499."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-499-1",
