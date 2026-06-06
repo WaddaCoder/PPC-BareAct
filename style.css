@@ -344,3 +344,59 @@ body {
 .map-node:last-child::after {
   content: "";
 }
+
+/* --- 9. ILLUMINATION LAMP & MEDIA TUTOR --- */
+
+/* Wrapper for the new content blocks */
+.lamp-tutor-container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Base style for the new cards */
+.context-block {
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  background: #fcfcfc;
+}
+
+/* Illumination Lamp styling */
+.illumination-lamp {
+  border-left: 4px solid #f9ab00; /* Amber for 'light' */
+}
+
+.lamp-header {
+  font-weight: 600;
+  color: #b45f06;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lamp-content {
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Media Tutor styling */
+.media-tutor {
+  border-left: 4px solid #d93025; /* Red for YouTube branding */
+}
+
+.tutor-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.tutor-link:hover {
+  text-decoration: underline;
+}
