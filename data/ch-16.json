@@ -24,6 +24,13 @@
     "map_node": { "x": 250, "y": 1120 },
     "content": "Whoever, with the intention of causing death or with the intention of causing bodily injury to a person, by doing an act which in the ordinary course of nature is likely to cause death, or with the knowledge that his act is so imminently dangerous that it must in all probability cause death, causes the death of such person, is said to commit qatl-i-amd.",
     "related_sections": [{ "section": "302", "title": "Punishment of qatl-i-amd" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-300-1",
+        "scenario": "A intentionally shoots B with a firearm at a vital part of the body, and B dies as a result.",
+        "legal_effect": "A has committed Qatl-i-Amd under Section 300."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-300-1",
@@ -65,6 +72,13 @@
     "sentencing_ladder": [
       { "condition": "Standard Offence", "penalty": "Diyat and up to 25 years imprisonment as ta'zir" }
     ],
+    "illumination_lamp": [
+      {
+        "id": "ill-315-1",
+        "scenario": "A intentionally strikes B with a small stick, not intending to kill, but B unexpectedly dies due to an underlying health condition.",
+        "legal_effect": "A is guilty of Qatl Shibh-i-Amd under Section 315."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-315-1",
@@ -84,6 +98,10 @@
     "sentencing_ladder": [
       { "condition": "Standard Offence", "penalty": "Liability defaults to paying Diyat to the heirs" }
     ],
+    "media_tutor": {
+      "title": "Offences Affecting the Human Body - Legal Analysis",
+      "url": "https://www.youtube.com/watch?v=6qI-3j0F4cs"
+    },
     "footnotes": [
       {
         "id": "fn-318-1",
