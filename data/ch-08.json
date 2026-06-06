@@ -58,6 +58,10 @@
     "mode_tags": ["linear", "offences"],
     "map_node": { "x": 650, "y": 220 },
     "content": "When two or more persons, by fighting in a public place, disturb the public peace, they are said to 'commit an affray'.",
+    "media_tutor": {
+      "title": "Introduction to Criminal Law Framework",
+      "url": "https://www.youtube.com/watch?v=X--oYF990XQ"
+    },
     "footnotes": [
       {
         "id": "fn-159-1",
