@@ -5,7 +5,9 @@
     "chapter": "X",
     "chapter_title": "Of Contempts of the Lawful Authority of Public Servants",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 520 },
     "content": "Whoever absconds in order to avoid being served with a summons, notice or order proceeding from any public servant legally empowered as such public servant to issue the same, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+    "related_sections": [{ "section": "186", "title": "Obstructing public servant" }],
     "footnotes": [
       {
         "id": "fn-172-1",
@@ -19,8 +21,10 @@
     "title": "Obstructing public servant in discharge of public functions",
     "chapter": "X",
     "chapter_title": "Of Contempts of the Lawful Authority of Public Servants",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 250, "y": 520 },
     "content": "Whoever voluntarily obstructs any public servant in the discharge of his public functions, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to fifteen hundred rupees, or with both.",
+    "related_sections": [{ "section": "172", "title": "Absconding to avoid summons" }],
     "footnotes": [
       {
         "id": "fn-186-1",
