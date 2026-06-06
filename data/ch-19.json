@@ -5,7 +5,11 @@
     "chapter": "XIX",
     "chapter_title": "Criminal Breach of Service Contracts",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 1520 },
     "content": "Whoever, being bound by a lawful contract to attend on or to supply the wants of any person who, by reason of youth, or of unsoundness of mind, or of a disease or bodily weakness, is helpless or incapable of providing for his own safety or of supplying his own wants, voluntarily omits so to do, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to five hundred rupees, or with both.",
+    "sentencing_ladder": [
+      { "condition": "Standard Offence", "penalty": "Up to 3 months imprisonment, or fine up to 500 PKR, or both" }
+    ],
     "footnotes": [
       {
         "id": "fn-491-1",
