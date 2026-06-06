@@ -5,7 +5,9 @@
     "chapter": "XI",
     "chapter_title": "Of False Evidence and Offences against Public Justice",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 620 },
     "content": "Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence.",
+    "related_sections": [{ "section": "192", "title": "Fabricating false evidence" }],
     "footnotes": [
       {
         "id": "fn-191-1",
@@ -19,8 +21,10 @@
     "title": "Fabricating false evidence",
     "chapter": "XI",
     "chapter_title": "Of False Evidence and Offences against Public Justice",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 250, "y": 620 },
     "content": "Whoever causes any circumstance to exist or makes any false entry in any book or record, or makes any document containing a false statement, intending that such circumstance, false entry or false statement may appear in evidence in a judicial proceeding... and that such circumstance, false entry or false statement may cause any person who in such proceeding is to form an opinion upon the evidence, to entertain an erroneous opinion... is said to fabricate false evidence.",
+    "related_sections": [{ "section": "191", "title": "Giving false evidence" }, { "section": "201", "title": "Screening offender" }],
     "footnotes": [
       {
         "id": "fn-192-1",
@@ -34,8 +38,10 @@
     "title": "Causing disappearance of evidence of offence, or giving false information to screen offender",
     "chapter": "XI",
     "chapter_title": "Of False Evidence and Offences against Public Justice",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 450, "y": 620 },
     "content": "Whoever, knowing or having reason to believe that an offence has been committed, causes any evidence of the commission of that offence to disappear, with the intention of screening the offender from legal punishment, or with that intention gives any information respecting the offence which he knows or believes to be false, shall... be punished.",
+    "related_sections": [{ "section": "192", "title": "Fabricating false evidence" }],
     "footnotes": [
       {
         "id": "fn-201-1",
