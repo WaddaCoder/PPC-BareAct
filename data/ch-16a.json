@@ -5,7 +5,9 @@
     "chapter": "XVI-A",
     "chapter_title": "Wrongful Confinement & Kidnapping",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 1220 },
     "content": "Whoever causes pain, harm, disease, infirmity or injury to any person or impairs, disables or dismembers any organ of the body or part thereof without causing his death, is said to cause hurt.",
+    "related_sections": [{ "section": "337", "title": "Shajjah" }, { "section": "337B", "title": "Jurh" }],
     "footnotes": [
       {
         "id": "fn-332-1",
@@ -19,8 +21,10 @@
     "title": "Shajjah",
     "chapter": "XVI-A",
     "chapter_title": "Wrongful Confinement & Kidnapping",
-    "mode_tags": ["linear"],
-    "content": "Whoever causes hurt on the head or face of any person which does not amount to itlaf-i-udw or itlaf-i- صلاحية-udw is said to cause shajjah.",
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 250, "y": 1220 },
+    "content": "Whoever causes hurt on the head or face of any person which does not amount to itlaf-i-udw or itlaf-i-صلاحية-udw is said to cause shajjah.",
+    "related_sections": [{ "section": "332", "title": "Hurt" }],
     "footnotes": [
       {
         "id": "fn-337-1",
@@ -34,8 +38,10 @@
     "title": "Jurh",
     "chapter": "XVI-A",
     "chapter_title": "Wrongful Confinement & Kidnapping",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 450, "y": 1220 },
     "content": "Whoever causes hurt on any part of the body of any person, other than the head or face, which leaves a mark of the injury, temporary or permanent, is said to cause jurh.",
+    "related_sections": [{ "section": "332", "title": "Hurt" }],
     "footnotes": [
       {
         "id": "fn-337b-1",
