@@ -5,7 +5,12 @@
     "chapter": "XIII",
     "chapter_title": "Offences relating to Weights and Measures",
     "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 50, "y": 820 },
     "content": "Whoever fraudulently uses any instrument for weighing which he knows to be false, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both.",
+    "related_sections": [{ "section": "265", "title": "Fraudulent use of false weight or measure" }],
+    "sentencing_ladder": [
+      { "condition": "Standard Offence", "penalty": "Up to 1 year imprisonment, or fine, or both" }
+    ],
     "footnotes": [
       {
         "id": "fn-264-1",
@@ -19,8 +24,12 @@
     "title": "Fraudulent use of false weight or measure",
     "chapter": "XIII",
     "chapter_title": "Offences relating to Weights and Measures",
-    "mode_tags": ["linear"],
+    "mode_tags": ["linear", "offences"],
+    "map_node": { "x": 250, "y": 820 },
     "content": "Whoever fraudulently uses any false weight or false measure of length or capacity, or fraudulently uses any weight or any measure of length or capacity as a different weight or measure from what it is, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both.",
-    "footnotes": []
+    "related_sections": [{ "section": "264", "title": "Fraudulent use of false instrument" }],
+    "sentencing_ladder": [
+      { "condition": "Standard Offence", "penalty": "Up to 1 year imprisonment, or fine, or both" }
+    ]
   }
 ]
