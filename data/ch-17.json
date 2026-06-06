@@ -58,8 +58,8 @@
     "map_node": { "x": 450, "y": 1320 },
     "content": "In all robbery there is either theft or extortion...",
     "related_sections": [
-        { "section": "378", "title": "Theft" },
-        { "section": "383", "title": "Extortion" }
+      { "section": "378", "title": "Theft" },
+      { "section": "383", "title": "Extortion" }
     ],
     "sentencing_ladder": [
       { "condition": "Standard Robbery (Sec. 392)", "penalty": "Up to 10 years" }
@@ -87,6 +87,10 @@
         "scenario": "A takes property belonging to Z out of Z's possession in good faith, believing at the time when he takes it that the property belongs to himself.",
         "legal_effect": "A is not guilty of theft; but if A, after discovering his mistake, dishonestly appropriates the property, he is guilty of an offence under this section."
       }
-    ]
+    ],
+    "media_tutor": {
+      "title": "Offences Against Property - Legal Analysis",
+      "url": "https://www.youtube.com/watch?v=6qI-3j0F4cs"
+    }
   }
 ]
