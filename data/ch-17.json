@@ -16,6 +16,13 @@
       { "condition": "Theft in a Dwelling House (Sec. 380)", "penalty": "Up to 7 years" },
       { "condition": "Theft by Clerk/Servant (Sec. 381)", "penalty": "Up to 7 years + Fine" }
     ],
+    "illumination_lamp": [
+      {
+        "id": "ill-378-1",
+        "scenario": "A cuts down a tree on Z's ground, with the intention of dishonestly taking the tree out of Z's possession without Z's consent.",
+        "legal_effect": "As soon as A has severed the tree in order to such taking, he has committed theft."
+      }
+    ],
     "footnotes": [
       { "id": "fn-378-1", "marker": "moves that property", "text": "The Asportation Rule: Physical movement is the exact moment the crime is completed." },
       { "id": "fn-378-2", "marker": "dishonestly", "is_definition": true, "text": "Section 24, PPC: Whoever does anything with the intention of causing wrongful gain to one person or wrongful loss to another." }
@@ -33,6 +40,13 @@
     "sentencing_ladder": [
       { "condition": "General Extortion (Sec. 384)", "penalty": "Up to 3 years" },
       { "condition": "Extortion by threat of death/grievous hurt (Sec. 386)", "penalty": "Up to 10 years" }
+    ],
+    "illumination_lamp": [
+      {
+        "id": "ill-383-1",
+        "scenario": "A threatens to publish a defamatory libel concerning Z unless Z gives A money.",
+        "legal_effect": "A has committed extortion."
+      }
     ]
   },
   {
@@ -49,6 +63,13 @@
     ],
     "sentencing_ladder": [
       { "condition": "Standard Robbery (Sec. 392)", "penalty": "Up to 10 years" }
+    ],
+    "illumination_lamp": [
+      {
+        "id": "ill-390-1",
+        "scenario": "A holds Z down and fraudulently takes Z's money and jewels from Z's clothes without Z's consent.",
+        "legal_effect": "Here A has committed theft, and in order to the committing of that theft, has voluntarily caused hurt to Z. Therefore, A has committed robbery."
+      }
     ]
   },
   {
@@ -59,6 +80,13 @@
     "mode_tags": ["linear", "offences"],
     "map_node": { "x": 650, "y": 1320 },
     "content": "Whoever dishonestly misappropriates or converts to his own use any moveable property, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
-    "related_sections": [{ "section": "378", "title": "Theft" }]
+    "related_sections": [{ "section": "378", "title": "Theft" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-403-1",
+        "scenario": "A takes property belonging to Z out of Z's possession in good faith, believing at the time when he takes it that the property belongs to himself.",
+        "legal_effect": "A is not guilty of theft; but if A, after discovering his mistake, dishonestly appropriates the property, he is guilty of an offence under this section."
+      }
+    ]
   }
 ]
