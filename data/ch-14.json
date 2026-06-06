@@ -8,6 +8,13 @@
     "map_node": { "x": 50, "y": 920 },
     "content": "A person is guilty of a public nuisance who does any act or is guilty of an illegal omission which causes any common injury, danger, annoyance or obstruction to the public or to the people in general who dwell or occupy property in the vicinity, or which must necessarily cause injury, obstruction, danger or annoyance to persons who may have occasion to use any public right.",
     "related_sections": [{ "section": "290", "title": "Punishment for public nuisance" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-268-1",
+        "scenario": "A conducts a noisy trade in a residential area, creating a common annoyance to all people dwelling in the vicinity.",
+        "legal_effect": "A is guilty of public nuisance under Section 268."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-268-1",
@@ -26,6 +33,13 @@
     "content": "Whoever drives any vehicle, or rides, on any public way in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any other person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine which may extend to ten thousand rupees, or with both.",
     "sentencing_ladder": [
       { "condition": "Standard Offence", "penalty": "Up to 2 years imprisonment, fine up to 10,000 PKR, or both" }
+    ],
+    "illumination_lamp": [
+      {
+        "id": "ill-279-1",
+        "scenario": "A driver speeds through a crowded market street at a high velocity, forcing pedestrians to jump out of the way to avoid being struck.",
+        "legal_effect": "A is guilty of rash driving under Section 279."
+      }
     ],
     "footnotes": [
       {
@@ -46,6 +60,10 @@
     "related_sections": [{ "section": "268", "title": "Public nuisance" }],
     "sentencing_ladder": [
       { "condition": "General Penalty", "penalty": "Fine up to 500 PKR" }
-    ]
+    ],
+    "media_tutor": {
+      "title": "Public Health and Safety Offences - Legal Analysis",
+      "url": "https://www.youtube.com/watch?v=6qI-3j0F4cs"
+    }
   }
 ]
