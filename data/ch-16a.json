@@ -3,11 +3,18 @@
     "section_number": "332",
     "title": "Hurt",
     "chapter": "XVI-A",
-    "chapter_title": "Wrongful Confinement & Kidnapping",
+    "chapter_title": "Of Hurt",
     "mode_tags": ["linear", "offences"],
     "map_node": { "x": 50, "y": 1220 },
     "content": "Whoever causes pain, harm, disease, infirmity or injury to any person or impairs, disables or dismembers any organ of the body or part thereof without causing his death, is said to cause hurt.",
     "related_sections": [{ "section": "337", "title": "Shajjah" }, { "section": "337B", "title": "Jurh" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-332-1",
+        "scenario": "A intentionally strikes B with a stick, causing pain and a bruise.",
+        "legal_effect": "A has caused hurt to B as defined in Section 332."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-332-1",
@@ -20,11 +27,18 @@
     "section_number": "337",
     "title": "Shajjah",
     "chapter": "XVI-A",
-    "chapter_title": "Wrongful Confinement & Kidnapping",
+    "chapter_title": "Of Hurt",
     "mode_tags": ["linear", "offences"],
     "map_node": { "x": 250, "y": 1220 },
-    "content": "Whoever causes hurt on the head or face of any person which does not amount to itlaf-i-udw or itlaf-i-صلاحية-udw is said to cause shajjah.",
+    "content": "Whoever causes hurt on the head or face of any person which does not amount to itlaf-i-udw or itlaf-i-salahiyat-i-udw is said to cause shajjah.",
     "related_sections": [{ "section": "332", "title": "Hurt" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-337-1",
+        "scenario": "A strikes B on the forehead with a stone, causing a wound that exposes the bone.",
+        "legal_effect": "A has committed the offence of Shajjah under Section 337."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-337-1",
@@ -37,11 +51,22 @@
     "section_number": "337B",
     "title": "Jurh",
     "chapter": "XVI-A",
-    "chapter_title": "Wrongful Confinement & Kidnapping",
+    "chapter_title": "Of Hurt",
     "mode_tags": ["linear", "offences"],
     "map_node": { "x": 450, "y": 1220 },
     "content": "Whoever causes hurt on any part of the body of any person, other than the head or face, which leaves a mark of the injury, temporary or permanent, is said to cause jurh.",
     "related_sections": [{ "section": "332", "title": "Hurt" }],
+    "illumination_lamp": [
+      {
+        "id": "ill-337b-1",
+        "scenario": "A stabs B in the arm, leaving a distinct wound.",
+        "legal_effect": "A has committed the offence of Jurh under Section 337B."
+      }
+    ],
+    "media_tutor": {
+      "title": "Offences Affecting the Human Body - Legal Analysis",
+      "url": "https://www.youtube.com/watch?v=6qI-3j0F4cs"
+    },
     "footnotes": [
       {
         "id": "fn-337b-1",
