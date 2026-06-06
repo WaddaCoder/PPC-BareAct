@@ -11,6 +11,13 @@
     "sentencing_ladder": [
       { "condition": "Standard Offence", "penalty": "Up to 1 year imprisonment, or fine, or both" }
     ],
+    "illumination_lamp": [
+      {
+        "id": "ill-264-1",
+        "scenario": "A merchant knowingly uses a scale that he has modified to show a weight higher than the actual item, in order to overcharge a customer.",
+        "legal_effect": "The merchant has committed fraudulent use of a false instrument for weighing under Section 264."
+      }
+    ],
     "footnotes": [
       {
         "id": "fn-264-1",
@@ -30,6 +37,17 @@
     "related_sections": [{ "section": "264", "title": "Fraudulent use of false instrument" }],
     "sentencing_ladder": [
       { "condition": "Standard Offence", "penalty": "Up to 1 year imprisonment, or fine, or both" }
-    ]
+    ],
+    "illumination_lamp": [
+      {
+        "id": "ill-265-1",
+        "scenario": "A trader uses a 900-gram weight while representing it to the buyer as a standard 1-kilogram weight.",
+        "legal_effect": "This constitutes fraudulent use of a false weight under Section 265."
+      }
+    ],
+    "media_tutor": {
+      "title": "Offences Relating to Weights and Measures - Legal Analysis",
+      "url": "https://www.youtube.com/watch?v=6qI-3j0F4cs"
+    }
   }
 ]
