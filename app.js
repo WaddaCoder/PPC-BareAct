@@ -59,10 +59,8 @@ function renderMap() {
   container.innerHTML = `<div class="map-canvas" id="map-canvas"></div>`;
   const mapCanvas = document.getElementById('map-canvas');
   
-  // If no chapter is selected, don't draw anything (prevent overlay)
   if (!activeChapterFilter) return;
 
-  // Filter sections by map_node existence AND active chapter filter
   let mappedSections = loadedSections.filter(s => s.map_node && s.chapter === activeChapterFilter);
   
   mappedSections.forEach((section) => {
@@ -90,7 +88,6 @@ function renderChapterPills() {
     );
   }
   
-  // Only add 'All Chapters' pill if we are NOT in map mode
   if (activeMode !== 'map') {
     const allPill = document.createElement('button');
     allPill.className = `pill ${activeChapterFilter === 'ALL' ? 'active' : ''}`;
@@ -149,9 +146,21 @@ function renderCode() {
     }
 
     let ladderHTML = section.sentencing_ladder ? `<details class="sentencing-ladder"><summary>🪜 View Sentencing Escalation</summary><div class="ladder-steps">${section.sentencing_ladder.map(s => `<div class="step"><strong>${s.condition}:</strong> ${s.penalty}</div>`).join('')}</div></details>` : '';
+    
+    // NEW: Lamp & Tutor Logic
+    let contextHTML = '<div class="lamp-tutor-container">';
+    if (section.illumination_lamp?.length > 0) {
+      const ill = section.illumination_lamp[0];
+      contextHTML += `<div class="context-block illumination-lamp"><div class="lamp-header">💡 Illustration</div><div class="lamp-content"><strong>Scenario:</strong> ${ill.scenario}<br><strong>Effect:</strong> ${ill.legal_effect}</div></div>`;
+    }
+    if (section.media_tutor) {
+      contextHTML += `<div class="context-block media-tutor"><a href="${section.media_tutor.url}" class="tutor-link" target="_blank">▶️ ${section.media_tutor.title}</a></div>`;
+    }
+    contextHTML += '</div>';
+
     let relatedHTML = section.related_sections ? `<div class="related-bar"><strong>See also:</strong> ${section.related_sections.map(rs => `<span class="link" onclick="scrollToSection('${rs.section}')">Sec. ${rs.section}</span>`).join(', ')}</div>` : '';
 
-    card.innerHTML = `<div class="meta-tag">Chapter ${section.chapter || ''}: ${section.chapter_title || ''}</div><h3 class="section-heading">Sec. ${section.section_number || ''}: ${section.title || ''}</h3>${contentHTML}${ladderHTML}${relatedHTML}`;
+    card.innerHTML = `<div class="meta-tag">Chapter ${section.chapter || ''}: ${section.chapter_title || ''}</div><h3 class="section-heading">Sec. ${section.section_number || ''}: ${section.title || ''}</h3>${contentHTML}${ladderHTML}${contextHTML}${relatedHTML}`;
     container.appendChild(card);
   });
   setupInteractionListeners();
@@ -175,7 +184,6 @@ if (mapBtn) mapBtn.addEventListener('click', () => {
   activeMode = 'map'; 
   updateModeUI(mapBtn, [linearBtn, offencesBtn]); 
   
-  // Set default to first available mapped chapter
   const firstMappedChapter = globalChapters.find(ch => 
     loadedSections.some(s => s.chapter === ch.id && s.map_node)
   );
