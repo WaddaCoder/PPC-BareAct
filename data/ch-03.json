@@ -3,69 +3,30 @@
     "section_number": "53",
     "title": "Punishments",
     "chapter": "III",
-    "content": "The punishments to which offenders are liable under the provisions of this Code are: Firstly, Qisas; Secondly, Diyat; Thirdly, Arsh; Fourthly, Daman; Fifthly, Ta'zir; Sixthly, Death; Seventhly, Imprisonment for life; Eighthly, Imprisonment which is of two descriptions, namely: (i) Rigorous, i.e., with hard labour, (ii) Simple; Ninthly, Forfeiture of property; Tenthly, Fine.",
-    "status": "Active"
+    "content": "The punishments to which offenders are liable are: Qisas, Diyat, Arsh, Daman, Ta'zir, Death, Imprisonment for life, Imprisonment, Forfeiture of property, Fine.",
+    "punishment_ladder": ["Qisas", "Diyat", "Arsh", "Daman", "Ta'zir", "Death", "Imprisonment for life", "Imprisonment", "Forfeiture", "Fine"]
   },
-  {
-    "section_number": "54",
-    "title": "Commutation of sentence of death",
-    "chapter": "III",
-    "content": "The Federal or Provincial Government may, without the offender's consent, commute the death sentence for any other punishment."
-  },
-  {
-    "section_number": "55",
-    "title": "Commutation of sentence of imprisonment for life",
-    "chapter": "III",
-    "content": "The Government may commute a sentence of imprisonment for life for imprisonment of either description for a term not exceeding twenty years."
-  },
-  {
-    "section_number": "55A",
-    "title": "Definition of appropriate Government",
-    "chapter": "III",
-    "content": "The 'appropriate Government' means the Federal Government in cases where the sentence is one of death or for any other offence against laws relating to a matter to which the executive power of the Federal Government extends."
-  },
-  {
-    "section_number": "56",
-    "title": "Sentence of Europeans and Americans to penal servitude",
-    "chapter": "III",
-    "content": "Repealed by the Criminal Law Amendment Act, 1921.",
-    "status": "Repealed"
-  },
-  {
-    "section_number": "57",
-    "title": "Fractions of terms of punishment",
-    "chapter": "III",
-    "content": "In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty-five years."
-  },
-  {
-    "section_number": "58-62",
-    "title": "Omitted/Repealed Sections",
-    "chapter": "III",
-    "content": "Sections 58 through 62 were repealed/omitted by the Federal Laws (Revision and Declaration) Ordinance, 1981.",
-    "status": "Repealed"
-  },
-  {
-    "section_number": "63",
-    "title": "Amount of fine",
-    "chapter": "III",
-    "content": "Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive."
-  },
-  {
-    "section_number": "73",
-    "title": "Solitary confinement",
-    "chapter": "III",
-    "content": "The Court may order an offender to be kept in solitary confinement for any portion of their rigorous imprisonment, not exceeding three months in total."
-  },
-  {
-    "section_number": "74",
-    "title": "Limit of solitary confinement",
-    "chapter": "III",
-    "content": "In executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time."
-  },
-  {
-    "section_number": "75",
-    "title": "Enhanced punishment for certain offences under Chapter XII or Chapter XVII after previous conviction",
-    "chapter": "III",
-    "content": "Whoever, having been convicted of an offence punishable under Chapter XII or Chapter XVII with imprisonment of either description for a term of three years or upwards, shall be guilty of any offence punishable under either of those chapters with imprisonment of either description for a term of three years or upwards, shall be subject for every such subsequent offence to imprisonment for life, or to imprisonment of either description for a term which may extend to ten years."
-  }
+  { "section_number": "54", "title": "Commutation of sentence of death", "chapter": "III", "content": "..." },
+  { "section_number": "55", "title": "Commutation of sentence of imprisonment for life", "chapter": "III", "content": "..." },
+  { "section_number": "55A", "title": "Power of Federal Government to commute", "chapter": "III", "content": "..." },
+  { "section_number": "56", "title": "Repealed", "chapter": "III", "content": "[Repealed by the Criminal Law (Amendment) Act, 1921]." },
+  { "section_number": "57", "title": "Fractions of terms of punishment", "chapter": "III", "content": "Imprisonment for life shall be reckoned as equivalent to twenty-five years." },
+  { "section_number": "58", "title": "Repealed", "chapter": "III", "content": "[Repealed/Omitted by the Federal Laws (Revision and Declaration) Ordinance, 1981]." },
+  { "section_number": "59", "title": "Repealed", "chapter": "III", "content": "[Repealed/Omitted by the Federal Laws (Revision and Declaration) Ordinance, 1981]." },
+  { "section_number": "60", "title": "Repealed", "chapter": "III", "content": "[Repealed/Omitted by the Federal Laws (Revision and Declaration) Ordinance, 1981]." },
+  { "section_number": "61", "title": "Repealed", "chapter": "III", "content": "[Repealed/Omitted by the Federal Laws (Revision and Declaration) Ordinance, 1981]." },
+  { "section_number": "62", "title": "Repealed", "chapter": "III", "content": "[Repealed/Omitted by the Federal Laws (Revision and Declaration) Ordinance, 1981]." },
+  { "section_number": "63", "title": "Amount of fine", "chapter": "III", "content": "Where no sum is expressed, the amount of fine is unlimited, but shall not be excessive." },
+  { "section_number": "64", "title": "Sentence of imprisonment for non-payment of fine", "chapter": "III", "content": "..." },
+  { "section_number": "65", "title": "Limit to imprisonment for non-payment of fine, when imprisonment and fine awardable", "chapter": "III", "content": "..." },
+  { "section_number": "66", "title": "Description of imprisonment for non-payment of fine", "chapter": "III", "content": "..." },
+  { "section_number": "67", "title": "Imprisonment for non-payment of fine, when offence punishable with fine only", "chapter": "III", "content": "..." },
+  { "section_number": "68", "title": "Imprisonment to terminate on payment of fine", "chapter": "III", "content": "..." },
+  { "section_number": "69", "title": "Termination of imprisonment on payment of proportional part of fine", "chapter": "III", "content": "..." },
+  { "section_number": "70", "title": "Fine leviable within six years, or during imprisonment", "chapter": "III", "content": "..." },
+  { "section_number": "71", "title": "Limit of punishment of offence made up of several offences", "chapter": "III", "content": "..." },
+  { "section_number": "72", "title": "Punishment of person guilty of one of several offences, the judgment stating that it is doubtful of which", "chapter": "III", "content": "..." },
+  { "section_number": "73", "title": "Solitary confinement", "chapter": "III", "content": "..." },
+  { "section_number": "74", "title": "Limit of solitary confinement", "chapter": "III", "content": "..." },
+  { "section_number": "75", "title": "Enhanced punishment for certain offences", "chapter": "III", "content": "..." }
 ]
