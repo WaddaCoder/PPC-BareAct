@@ -3,24 +3,69 @@
     "section_number": "53",
     "title": "Punishments",
     "chapter": "III",
-    "chapter_title": "Of Punishments",
-    "mode_tags": ["linear", "offences"],
     "content": "The punishments to which offenders are liable under the provisions of this Code are: Firstly, Qisas; Secondly, Diyat; Thirdly, Arsh; Fourthly, Daman; Fifthly, Ta'zir; Sixthly, Death; Seventhly, Imprisonment for life; Eighthly, Imprisonment which is of two descriptions, namely: (i) Rigorous, i.e., with hard labour, (ii) Simple; Ninthly, Forfeiture of property; Tenthly, Fine.",
-    "footnotes": [
-      {
-        "id": "fn-ch3-1",
-        "marker": "Qisas",
-        "text": "Substituted by the Criminal Law (Amendment) Act, II of 1997. Qisas means punishment by causing similar hurt at the same part of the body of the convict as he has caused to the victim or by causing his death if he has committed qatl-i-amd."
-      }
-    ]
+    "status": "Active"
   },
   {
     "section_number": "54",
     "title": "Commutation of sentence of death",
     "chapter": "III",
-    "chapter_title": "Of Punishments",
-    "mode_tags": ["linear"],
-    "content": "In every case in which sentence of death shall have been passed the Federal Government or the Provincial Government of the Province within which the offender shall have been sentenced may, without the consent of the offender, commute the punishment for any other punishment provided by this Code.",
-    "footnotes": []
+    "content": "The Federal or Provincial Government may, without the offender's consent, commute the death sentence for any other punishment."
+  },
+  {
+    "section_number": "55",
+    "title": "Commutation of sentence of imprisonment for life",
+    "chapter": "III",
+    "content": "The Government may commute a sentence of imprisonment for life for imprisonment of either description for a term not exceeding twenty years."
+  },
+  {
+    "section_number": "55A",
+    "title": "Definition of appropriate Government",
+    "chapter": "III",
+    "content": "The 'appropriate Government' means the Federal Government in cases where the sentence is one of death or for any other offence against laws relating to a matter to which the executive power of the Federal Government extends."
+  },
+  {
+    "section_number": "56",
+    "title": "Sentence of Europeans and Americans to penal servitude",
+    "chapter": "III",
+    "content": "Repealed by the Criminal Law Amendment Act, 1921.",
+    "status": "Repealed"
+  },
+  {
+    "section_number": "57",
+    "title": "Fractions of terms of punishment",
+    "chapter": "III",
+    "content": "In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty-five years."
+  },
+  {
+    "section_number": "58-62",
+    "title": "Omitted/Repealed Sections",
+    "chapter": "III",
+    "content": "Sections 58 through 62 were repealed/omitted by the Federal Laws (Revision and Declaration) Ordinance, 1981.",
+    "status": "Repealed"
+  },
+  {
+    "section_number": "63",
+    "title": "Amount of fine",
+    "chapter": "III",
+    "content": "Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive."
+  },
+  {
+    "section_number": "73",
+    "title": "Solitary confinement",
+    "chapter": "III",
+    "content": "The Court may order an offender to be kept in solitary confinement for any portion of their rigorous imprisonment, not exceeding three months in total."
+  },
+  {
+    "section_number": "74",
+    "title": "Limit of solitary confinement",
+    "chapter": "III",
+    "content": "In executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time."
+  },
+  {
+    "section_number": "75",
+    "title": "Enhanced punishment for certain offences under Chapter XII or Chapter XVII after previous conviction",
+    "chapter": "III",
+    "content": "Whoever, having been convicted of an offence punishable under Chapter XII or Chapter XVII with imprisonment of either description for a term of three years or upwards, shall be guilty of any offence punishable under either of those chapters with imprisonment of either description for a term of three years or upwards, shall be subject for every such subsequent offence to imprisonment for life, or to imprisonment of either description for a term which may extend to ten years."
   }
 ]
