@@ -1,15 +1,52 @@
-{
-  "section_number": "4",
-  "title": "Extension of Code to extra-territorial offences",
-  "chapter": "I",
-  "chapter_title": "Introduction",
-  "mode_tags": ["linear"],
-  "content": "The provisions of this Code apply also to any offence committed by: (1) any citizen of Pakistan or any person in the service of Pakistan in any place without and beyond Pakistan; (2) any person on any ship or aircraft registered in Pakistan wherever it may be; (3) any person in any place without and beyond Pakistan committing offence targeting a computer resource.",
-  "footnotes": [
-    {
-      "id": "fn-2",
-      "marker": "citizen of Pakistan",
-      "text": "Substituted by the Central Laws (Adaptation) Order, 1961, Art. 2 and Sch., for 'British subject of Pakistani domicile'."
-    }
-  ]
-}
+[
+  {
+    "section_number": "1",
+    "title": "Title and extent of operation of the Code",
+    "chapter": "I",
+    "chapter_title": "Introduction",
+    "content": "This Act shall be called the Pakistan Penal Code and shall take effect throughout Pakistan."
+  },
+  {
+    "section_number": "2",
+    "title": "Punishment of offences committed within Pakistan",
+    "chapter": "I",
+    "chapter_title": "Introduction",
+    "content": "Every person shall be liable to punishment under this Code and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within Pakistan."
+  },
+  {
+    "section_number": "3",
+    "title": "Punishment of offences committed beyond, which the law may try within Pakistan",
+    "chapter": "I",
+    "chapter_title": "Introduction",
+    "content": "Any person liable, by any law for the time being in force in Pakistan, to be tried for an offence committed beyond the limits of Pakistan, shall be dealt with according to the provisions of this Code for any act committed beyond the limits of Pakistan in the same manner as if such act had been committed within Pakistan."
+  },
+  {
+    "section_number": "4",
+    "title": "Extension of Code to extra-territorial offences",
+    "chapter": "I",
+    "chapter_title": "Introduction",
+    "mode_tags": ["linear"],
+    "content": "The provisions of this Code apply also to any offence committed by: (1) any citizen of Pakistan or any person in the service of Pakistan in any place without and beyond Pakistan; (2) any person on any ship or aircraft registered in Pakistan wherever it may be; (3) any person in any place without and beyond Pakistan committing offence targeting a computer resource.",
+    "illumination_lamp": [
+      {
+        "id": "ill-04-1",
+        "scenario": "A Pakistani citizen commits a cybercrime while located in another country, targeting a server in Pakistan.",
+        "legal_effect": "Section 4(3) grants jurisdiction to try the individual under the Pakistan Penal Code, effectively closing the 'extra-territorial' loophole."
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "fn-04-1",
+        "marker": "citizen of Pakistan",
+        "text": "Substituted by the Central Laws (Adaptation) Order, 1961, Art. 2 and Sch., for 'British subject of Pakistani domicile'."
+      }
+    ]
+  },
+  {
+    "section_number": "5",
+    "title": "Certain laws not to be affected by this Act",
+    "chapter": "I",
+    "chapter_title": "Introduction",
+    "content": "Nothing in this Act shall affect the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the Government of Pakistan or the provisions of any special or local law."
+  }
+]
