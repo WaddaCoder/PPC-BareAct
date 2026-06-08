@@ -22,6 +22,24 @@
     ]
   },
   {
+    "section_number": "77",
+    "title": "Act of Judge when acting judicially",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing is an offence which is done by a Judge when acting judicially in the exercise of any power which is, or which in good faith he believes to be, given to him by law.",
+    "footnotes": []
+  },
+  {
+    "section_number": "78",
+    "title": "Act done pursuant to the judgment or order of Court",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing which is done in pursuance of, or which is warranted by the judgment or order of, a Court of Justice; if done whilst such judgment or order remains in force, is an offence.",
+    "footnotes": []
+  },
+  {
     "section_number": "79",
     "title": "Act done by a person justified, or by mistake of fact believing himself justified, by law",
     "chapter": "IV",
@@ -117,6 +135,24 @@
     }
   },
   {
+    "section_number": "85",
+    "title": "Act of a person incapable of judgment by reason of intoxication caused against his will",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "Nothing is an offence which is done by a person who, at the time of doing it, is, by reason of intoxication, incapable of knowing the nature of the act, or that he is doing what is either wrong, or contrary to law; provided that the thing which intoxicated him was administered to him without his knowledge or against his will.",
+    "footnotes": []
+  },
+  {
+    "section_number": "86",
+    "title": "Offence requiring a particular intent or knowledge committed by one who is intoxicated",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "In cases where an act done is not an offence unless done with a particular knowledge or intent, a person who does the act in a state of intoxication shall be liable to be dealt with as if he had the same knowledge as he would have had if he had not been intoxicated, unless the thing which intoxicated him was administered to him without his knowledge or against his will.",
+    "footnotes": []
+  },
+  {
     "section_number": "87",
     "title": "Act not intended and not known to be likely to cause death or grievous hurt, done by consent",
     "chapter": "IV",
@@ -201,11 +237,12 @@
     "chapter_title": "General Exceptions",
     "mode_tags": ["linear"],
     "content": "The right of private defence of the body extends to the voluntary causing of death if the assault reasonably causes apprehension of death, grievous hurt, rape, unnatural lust, kidnapping, or wrongful confinement.",
+    "private_defence_ladder_rank": 3,
     "illumination_lamp": [
       {
         "id": "ill-100-1",
         "scenario": "A is assaulted by Z, who threatens to behead A.",
-        "legal_effect": "A is entitled to use force, extending to causing death."
+        "legal_effect": "A is entitled to use force, extending to causing death under the Proportionality Constraint."
       }
     ],
     "media_tutor": {
@@ -220,6 +257,17 @@
     "chapter_title": "General Exceptions",
     "mode_tags": ["linear"],
     "content": "The right of private defence of property extends to causing death if the offence be robbery, house-breaking by night, mischief by fire to a dwelling, or theft/trespass under apprehension of death/grievous hurt.",
+    "private_defence_ladder_rank": 2,
+    "footnotes": []
+  },
+  {
+    "section_number": "106",
+    "title": "Right of private defence against deadly assault when there is risk of harm to innocent person",
+    "chapter": "IV",
+    "chapter_title": "General Exceptions",
+    "mode_tags": ["linear"],
+    "content": "If in the exercise of the right of private defence against an assault which reasonably causes the apprehension of death, the defender be so situated that he cannot effectually exercise that right without risk of harm to an innocent person, his right of private defence extends to the running of that risk.",
+    "private_defence_ladder_rank": 4,
     "footnotes": []
   }
 ]
