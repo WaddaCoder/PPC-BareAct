@@ -1,16 +1,152 @@
 [
-  { "section_number": "107", "title": "Abetment of a thing", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear", "offences"], "content": "A person abets the doing of a thing, who: First.—Instigates any person to do that thing; or Secondly.—Engages in any conspiracy for the doing of that thing...; or Thirdly.—Intentionally aids, by any act or illegal omission, the doing of that thing.", "illumination_lamp": [{ "id": "ill-107-1", "scenario": "A instigates B to murder Z. B refuses.", "legal_effect": "A is guilty of abetting murder." }], "footnotes": [{ "id": "fn-107-1", "marker": "illegal omission", "text": "An omission is only illegal if it violates a legal duty to act." }] },
-  { "section_number": "108", "title": "Abettor", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence...", "footnotes": [{ "id": "fn-108-1", "marker": "capable by law", "text": "Abettor is guilty even if the principal is legally incapable (e.g., child or unsound mind)." }] },
-  { "section_number": "109", "title": "Punishment of abetment if the act abetted is committed in consequence", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "Whoever abets any offence shall, if the act abetted is committed in consequence of the abetment... be punished with the punishment provided for the offence.", "footnotes": [{ "id": "fn-109-1", "marker": "derivative liability", "text": "If the act is committed, the abettor is punished as if they committed it themselves." }] },
-  { "section_number": "110", "title": "Punishment of abetment if person abetted does act with different intention", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "Whoever abets... shall, if the person abetted does the act with a different intention or knowledge... be punished with the punishment provided for the offence which would have been committed if the act had been done with the intention of the abettor." },
-  { "section_number": "111", "title": "Liability of abettor when one act abetted and different act done", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "When an act is abetted and a different act is done, the abettor is liable for the act done... provided the act done was a probable consequence of the abetment.", "footnotes": [{ "id": "fn-111-1", "marker": "probable consequence", "text": "The test is objective foreseeability." }] },
-  { "section_number": "112", "title": "Abettor when liable to cumulative punishment for act abetted and for act done", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "If the act for which the abettor is liable under the last preceding section is committed in addition to the act abetted, and constitutes a distinct offence, the abettor is liable to punishment for each of the offences." },
-  { "section_number": "113", "title": "Liability of abettor for an effect caused by the act abetted different from that intended", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "When an act is abetted with the intention of causing a particular effect, and an act... causes a different effect... the abettor is liable for the effect caused, provided he knew that the act abetted was likely to cause that effect." },
-  { "section_number": "114", "title": "Abettor present, when offence is committed", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "Whenever any person, who if absent would be liable to be punished as an abettor, is present when the act or offence... is committed, he shall be deemed to have committed such act or offence.", "illumination_lamp": [{ "id": "ill-114-1", "scenario": "A instigates B to hit Z; A is present.", "legal_effect": "A is deemed to have committed the assault." }] },
-  { "section_number": "115", "title": "Abetment of offence punishable with death or imprisonment for life", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "Whoever abets... punishable with death or imprisonment for life, shall, if that offence be not committed in consequence of the abetment... be punished with imprisonment up to seven years, and fine." },
-  { "section_number": "116", "title": "Abetment of offence punishable with imprisonment", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "Whoever abets an offence punishable with imprisonment shall, if that offence be not committed... be punished with imprisonment of any description provided for that offence, for a term which may extend to one-fourth part of the longest term provided for that offence." },
-  { "section_number": "117", "title": "Abetting commission of offence by the public or by more than ten persons", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "Whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment for a term which may extend to three years, or with fine, or both." },
-  { "section_number": "118", "title": "Concealing design to commit offence punishable with death or imprisonment for life", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "Whoever, intending to facilitate... the commission of an offence punishable with death or imprisonment for life, voluntarily conceals... shall, if that offence be committed, be punished with imprisonment for a term which may extend to seven years." },
-  { "section_number": "119", "title": "Public servant concealing design to commit offence which it is his duty to prevent", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "Whoever, being a public servant, intending to facilitate... the commission of an offence which it is his duty to prevent... voluntarily conceals... shall be punished with imprisonment extending to half of the longest term for the offence." },
-  { "section_number": "120", "title": "Concealing design to commit offence punishable with imprisonment", "chapter": "V", "chapter_title": "Of Abetment", "mode_tags": ["linear"], "content": "Whoever, intending to facilitate... commission of an offence punishable with imprisonment, voluntarily conceals... shall be punished with imprisonment for a term which may extend to one-fourth of the longest term provided for that offence." }
+  {
+    "section_number": "107",
+    "title": "Abetment of a thing",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear", "offences"],
+    "content": "A person abets the doing of a thing, who:",
+    "sub_clauses": [
+      "First.—Instigates any person to do that thing;",
+      "Secondly.—Engages in any conspiracy for the doing of that thing, if an act or illegal omission takes place in pursuance of that conspiracy, and in order to the doing of that thing; or",
+      "Thirdly.—Intentionally aids, by any act or illegal omission, the doing of that thing."
+    ],
+    "illumination_lamp": [{ "id": "ill-107-1", "scenario": "A instigates B to murder Z. B refuses.", "legal_effect": "A is guilty of abetting murder." }],
+    "footnotes": [{ "id": "fn-107-1", "marker": "illegal omission", "text": "An omission is only illegal if it violates a legal duty to act." }]
+  },
+  {
+    "section_number": "108",
+    "title": "Abettor",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor.",
+    "sub_clauses": [
+      "Explanation 1.—The abetment of the illegal omission of an act may amount to an offence although the abettor may not himself be bound to do that act.",
+      "Explanation 2.—To constitute the offence of abetment it is not necessary that the act abetted should be committed, or that the effect requisite to constitute the offence should be caused.",
+      "Explanation 3.—It is not necessary that the person abetted should be capable by law of committing an offence."
+    ],
+    "footnotes": [{ "id": "fn-108-1", "marker": "capable by law", "text": "Abettor is guilty even if the principal is legally incapable (e.g., child or unsound mind)." }]
+  },
+  {
+    "section_number": "109",
+    "title": "Punishment of abetment if the act abetted is committed in consequence",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "Whoever abets any offence shall, if the act abetted is committed in consequence of the abetment, and no express provision is made by this Code for the punishment of such abetment, be punished with the punishment provided for the offence.",
+    "sub_clauses": ["An act or offence is said to be committed in consequence of abetment when it is committed in consequence of the instigation, or in pursuance of the conspiracy, or with the aid which constitutes the abetment."],
+    "footnotes": [{ "id": "fn-109-1", "marker": "derivative liability", "text": "If the act is committed, the abettor is punished as if they committed it themselves." }]
+  },
+  {
+    "section_number": "110",
+    "title": "Punishment of abetment if person abetted does act with different intention",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "Whoever abets the commission of an offence shall, if the person abetted does the act with a different intention or knowledge from that of the abettor, be punished with the punishment provided for the offence which would have been committed if the act had been done with the intention or knowledge of the abettor and with no other.",
+    "sub_clauses": [],
+    "footnotes": []
+  },
+  {
+    "section_number": "111",
+    "title": "Liability of abettor when one act abetted and different act done",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "When an act is abetted and a different act is done, the abettor is liable for the act done, in the same manner and to the same extent as if he had directly abetted it; provided the act done was a probable consequence of the abetment, and was committed under the influence of the instigation, or with the aid or in pursuance of the conspiracy which constituted the abetment.",
+    "sub_clauses": [],
+    "footnotes": [{ "id": "fn-111-1", "marker": "probable consequence", "text": "The test is objective foreseeability." }]
+  },
+  {
+    "section_number": "112",
+    "title": "Abettor when liable to cumulative punishment for act abetted and for act done",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "If the act for which the abettor is liable under the last preceding section is committed in addition to the act abetted, and constitutes a distinct offence, the abettor is liable to punishment for each of the offences.",
+    "sub_clauses": [],
+    "footnotes": []
+  },
+  {
+    "section_number": "113",
+    "title": "Liability of abettor for an effect caused by the act abetted different from that intended",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "When an act is abetted with the intention of causing a particular effect, and an act for which the abettor is liable in consequence of the abetment, causes a different effect from that intended by the abettor, the abettor is liable for the effect caused, provided he knew that the act abetted was likely to cause that effect.",
+    "sub_clauses": [],
+    "footnotes": []
+  },
+  {
+    "section_number": "114",
+    "title": "Abettor present, when offence is committed",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "Whenever any person, who if absent would be liable to be punished as an abettor, is present when the act or offence for which he would be punishable in consequence of the abetment is committed, he shall be deemed to have committed such act or offence.",
+    "sub_clauses": [],
+    "illumination_lamp": [{ "id": "ill-114-1", "scenario": "A instigates B to hit Z; A is present.", "legal_effect": "A is deemed to have committed the assault." }],
+    "footnotes": []
+  },
+  {
+    "section_number": "115",
+    "title": "Abetment of offence punishable with death or imprisonment for life",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "Whoever abets the commission of an offence punishable with death or imprisonment for life, shall, if that offence be not committed in consequence of the abetment, and no express provision is made by this Code for the punishment of such abetment, be punished with imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+    "sub_clauses": ["If any act for which the abettor is liable in consequence of the abetment, and which causes hurt to any person, is done, the abettor shall be liable to imprisonment for a term which may extend to fourteen years, and shall also be liable to fine."],
+    "footnotes": []
+  },
+  {
+    "section_number": "116",
+    "title": "Abetment of offence punishable with imprisonment",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "Whoever abets an offence punishable with imprisonment shall, if that offence be not committed in consequence of the abetment, and no express provision is made by this Code for the punishment of such abetment, be punished with imprisonment of any description provided for that offence, for a term which may extend to one-fourth part of the longest term provided for that offence, or with such fine as is provided for the offence, or with both.",
+    "sub_clauses": ["If the abettor or the person abetted is a public servant, whose duty it is to prevent the commission of such offence, the abettor shall be punished with imprisonment for a term which may extend to one-half of the longest term provided for that offence."],
+    "footnotes": []
+  },
+  {
+    "section_number": "117",
+    "title": "Abetting commission of offence by the public or by more than ten persons",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "Whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment for a term which may extend to three years, or with fine, or with both.",
+    "sub_clauses": [],
+    "footnotes": []
+  },
+  {
+    "section_number": "118",
+    "title": "Concealing design to commit offence punishable with death or imprisonment for life",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "Whoever, intending to facilitate or knowing it to be likely that he will thereby facilitate the commission of an offence punishable with death or imprisonment for life, voluntarily conceals, by any act or illegal omission, the existence of a design to commit such offence, or makes any representation which he knows to be false respecting such design, shall, if that offence be committed, be punished with imprisonment for a term which may extend to seven years, or, if the offence be not committed, with imprisonment for a term which may extend to three years.",
+    "sub_clauses": ["Liability to fine in both cases."],
+    "footnotes": []
+  },
+  {
+    "section_number": "119",
+    "title": "Public servant concealing design to commit offence which it is his duty to prevent",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "Whoever, being a public servant, intending to facilitate or knowing it to be likely that he will thereby facilitate the commission of an offence which it is his duty to prevent, voluntarily conceals, by any act or illegal omission, the existence of a design to commit such offence, or makes any representation which he knows to be false respecting such design, shall, if the offence be committed, be punished with imprisonment extending to half of the longest term provided for the offence.",
+    "sub_clauses": ["If the offence be punishable with death or imprisonment for life, with imprisonment for a term which may extend to ten years.", "If the offence be not committed, with imprisonment for a term which may extend to one-fourth of the longest term."],
+    "footnotes": []
+  },
+  {
+    "section_number": "120",
+    "title": "Concealing design to commit offence punishable with imprisonment",
+    "chapter": "V",
+    "chapter_title": "Of Abetment",
+    "mode_tags": ["linear"],
+    "content": "Whoever, intending to facilitate or knowing it to be likely that he will thereby facilitate the commission of an offence punishable with imprisonment, voluntarily conceals, by any act or illegal omission, the existence of a design to commit such offence, or makes any representation which he knows to be false respecting such design, shall, if the offence be committed, be punished with imprisonment for a term which may extend to one-fourth of the longest term provided for that offence.",
+    "sub_clauses": ["If the offence be not committed, to imprisonment for a term which may extend to one-eighth of the longest term provided for that offence.", "Liability to fine in both cases."],
+    "footnotes": []
+  }
 ]
