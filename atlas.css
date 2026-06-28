@@ -1,0 +1,29 @@
+body{
+margin:0;
+font-family:system-ui,sans-serif;
+background:#061426;
+color:#fff;
+padding:16px
+}
+header{margin-bottom:20px}
+input{
+width:100%;
+padding:14px;
+border-radius:14px;
+border:0;
+font-size:16px
+}
+.card{
+background:#10243d;
+border-radius:18px;
+padding:16px;
+margin:12px 0
+}
+.tag{
+display:inline-block;
+padding:5px 9px;
+border-radius:12px;
+background:#203b5c;
+margin:3px;
+font-size:12px
+}
